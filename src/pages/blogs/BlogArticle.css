@@ -1810,3 +1810,42 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* GLOBAL HERO RESPONSIVENESS - SPLIT LAYOUT */
+@media (max-width: 768px) {
+    .blog-hero {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+        min-height: 0 !important;
+        background: #1a1a1a;
+    }
+
+    .blog-hero__image {
+        position: relative !important;
+        width: 100% !important;
+        height: 300px !important;
+        object-fit: cover !important;
+        order: -1 !important;
+    }
+
+    .blog-hero__overlay {
+        position: relative !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 3rem 1.5rem 4rem !important;
+        background: #1a1a1a !important;
+        display: block !important;
+    }
+
+    .blog-hero__content {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .blog-hero__title {
+        font-size: 2.2rem !important;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+}

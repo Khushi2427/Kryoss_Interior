@@ -19,10 +19,10 @@ const Home = () => {
                         <h1 className="blog-hero__title">Home Interiors <br /><em style={{ color: 'var(--kr-gold)' }}>Made Easy</em></h1>
                         <p className="blog-hero__subtitle">Transform your living space with expert guidance from 400+ top designers. We handle everything from concept to flawless installation.</p>
                         <div className="hero-cta-group">
-                            <button className="btn btn-primary" style={{ background: 'var(--kr-red)', border: 'none', padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+                            <button className="hero-btn hero-btn-primary">
                                 Book Free Consultation <ArrowRight size={20} style={{ marginLeft: '10px' }} />
                             </button>
-                            <Link to="/projects" className="btn btn-outline" style={{ borderColor: '#fff', color: '#fff', padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+                            <Link to="/projects" className="hero-btn hero-btn-outline">
                                 View Recent Projects
                             </Link>
                         </div>
