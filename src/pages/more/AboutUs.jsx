@@ -22,7 +22,7 @@ const AboutUs = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">About Us</span>
+
                         <h1 className="blog-hero__title">Designing Homes That Are<br />Meant to Be <em style={{ color: 'var(--kr-gold)' }}>Lived In</em></h1>
                         <p className="blog-hero__subtitle">
                             At Kryoss Interior, we believe interior design is not just about how a space looks — it’s about how it supports everyday life. A well-designed home should feel comfortable, organized, and effortless to live in.

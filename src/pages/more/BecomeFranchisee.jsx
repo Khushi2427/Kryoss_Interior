@@ -21,7 +21,7 @@ const BecomeFranchisee = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Business Opportunity</span>
+
                         <h1 className="blog-hero__title">Become a <br /><em style={{ color: 'var(--kr-gold)' }}>Franchise Partner</em></h1>
                         <p className="blog-hero__subtitle">
                             Build Your Own Interior Business with the Right Support. Enter the interior industry with a structured framework and established brand.

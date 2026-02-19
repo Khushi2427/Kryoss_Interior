@@ -21,7 +21,7 @@ const Videos = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Gallery</span>
+
                         <h1 className="blog-hero__title">Our Work in <br /><em style={{ color: 'var(--kr-gold)' }}>Motion</em></h1>
                         <p className="blog-hero__subtitle">
                             See Our Work. Understand Our Process. Experience the Design through our curated video tours.

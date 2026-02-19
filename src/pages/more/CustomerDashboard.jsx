@@ -21,7 +21,7 @@ const CustomerDashboard = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Client Portal</span>
+
                         <h1 className="blog-hero__title">Track Your <br /><em style={{ color: 'var(--kr-gold)' }}>Project</em></h1>
                         <p className="blog-hero__subtitle">
                             Stay Informed. Feel Confident. Full visibility at every stage of your interior journey.

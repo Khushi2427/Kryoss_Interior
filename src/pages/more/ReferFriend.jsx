@@ -21,7 +21,7 @@ const ReferFriend = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Referral</span>
+
                         <h1 className="blog-hero__title">Share a Good Experience <br /><em style={{ color: 'var(--kr-gold)' }}>Earn Rewards</em></h1>
                         <p className="blog-hero__subtitle">
                             Help friends plan their interiors while you receive a token of our appreciation. Simple. Transparent. Rewarding.

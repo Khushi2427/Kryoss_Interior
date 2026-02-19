@@ -21,7 +21,7 @@ const BecomeDesignPartner = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Partnership</span>
+
                         <h1 className="blog-hero__title">Become a <br /><em style={{ color: 'var(--kr-gold)' }}>Design Partner</em></h1>
                         <p className="blog-hero__subtitle">
                             Collaborate. Create. Grow Together. Scale your work with better structure, smoother execution, and stronger backend support.

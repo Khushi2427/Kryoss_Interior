@@ -59,7 +59,7 @@ const FAQ = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Support</span>
+
                         <h1 className="blog-hero__title">Frequently Asked <br /><em style={{ color: 'var(--kr-gold)' }}>Questions</em></h1>
                         <p className="blog-hero__subtitle">
                             Clear Answers. No Confusion. Everything you need to know about working with us.

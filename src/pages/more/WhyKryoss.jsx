@@ -21,7 +21,7 @@ const WhyKryoss = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Philosophy</span>
+
                         <h1 className="blog-hero__title">Good Design Makes Life <br /><em style={{ color: 'var(--kr-gold)' }}>Easier</em></h1>
                         <p className="blog-hero__subtitle">
                             Design that supports life, not interrupts it. Practical, organized, and comfortable.

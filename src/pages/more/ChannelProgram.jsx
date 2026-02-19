@@ -21,7 +21,7 @@ const ChannelProgram = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Referral Program</span>
+
                         <h1 className="blog-hero__title">Collaborate. Refer. <br /><em style={{ color: 'var(--kr-gold)' }}>Grow Together</em></h1>
                         <p className="blog-hero__subtitle">
                             Connect clients who need quality interiors. Earn incentives. Build a long-term professional relationship based on trust and transparency.

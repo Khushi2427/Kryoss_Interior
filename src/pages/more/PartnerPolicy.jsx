@@ -21,7 +21,7 @@ const PartnerPolicy = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Guidelines</span>
+
                         <h1 className="blog-hero__title">Partner Policy & <br /><em style={{ color: 'var(--kr-gold)' }}>Ethics</em></h1>
                         <p className="blog-hero__subtitle">
                             Clear Guidelines. Ethical Collaboration. Long-Term Trust. Ensuring smooth collaboration and mutual respect.

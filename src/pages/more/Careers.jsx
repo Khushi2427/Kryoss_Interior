@@ -21,7 +21,7 @@ const Careers = () => {
                 />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
-                        <span className="blog-hero__tag">Careers</span>
+
                         <h1 className="blog-hero__title">Grow With Purpose <br /><em style={{ color: 'var(--kr-gold)' }}>Design With Impact</em></h1>
                         <p className="blog-hero__subtitle">
                             We don’t just build interiors — we build careers around clarity, responsibility, and growth. Join a team that values thoughtful design.
