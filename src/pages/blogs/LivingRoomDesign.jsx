@@ -1,7 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
-
+import livingRoom from '../../assets/blogs/Living Room.jpg';
 const faqs = [
   { q: 'What is the ideal living room size for modern design?', a: 'Smart layout planning can transform even compact spaces into functional and stylish living areas. The key is optimizing furniture placement, using vertical space, and selecting multi-functional pieces.' },
   { q: 'How long does a living room interior project take?', a: 'Projects typically range from 4-8 weeks. This includes design finalization (1-2 weeks), material procurement (2 weeks), and installation (2-3 weeks).' },
@@ -59,7 +59,7 @@ const LivingRoomDesign = () => {
     <div className="blog-page">
       {/* HERO */}
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1800&q=80" alt="Living Room Design" className="blog-hero__image" />
+        <img src={livingRoom} alt="Living Room Design" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Living Room Design Ideas That Redefine <em>Modern Living</em></h1>

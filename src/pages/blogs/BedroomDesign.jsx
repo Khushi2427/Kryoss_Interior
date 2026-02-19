@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import bedroom from '../../assets/blogs/Bedroom Design.jpg';
 
 const bedroomIdeas = [
   { icon: '', title: 'Layered Lighting', desc: 'Warm bedside lamps combined with indirect ceiling lights create a relaxing, spa-like ambiance perfect for rest.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
@@ -48,7 +49,7 @@ const BedroomDesign = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1616594039964-40891a90b3b5?w=1800&q=80" alt="Bedroom Design" className="blog-hero__image" />
+        <img src={bedroom} alt="Bedroom Design" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Bedroom Design Ideas for a <em>Restful Sanctuary</em></h1>

@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import modularKitchen from '../../assets/blogs/Modular Kitchen.jpg';
 
 const kitchenIdeas = [
   { icon: '', title: 'L-Shape Layout', desc: 'Perfect for medium-sized kitchens, the L-shape maximizes corner space and creates an efficient work triangle.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
@@ -48,7 +49,7 @@ const ModularKitchenInteriors = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=1800&q=80" alt="Modular Kitchen" className="blog-hero__image" />
+        <img src={modularKitchen} alt="Modular Kitchen" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Modular Kitchen Ideas for a <em>Smarter Home</em></h1>

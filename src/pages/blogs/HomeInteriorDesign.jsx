@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import homeInterior from '../../assets/blogs/Home Interior.jpg';
 
 const sections = ['intro', 'ideas', 'trends', 'process', 'benefits', 'faq', 'cta'];
 
@@ -67,7 +68,7 @@ const HomeInteriorDesign = () => {
     <div className="blog-page">
       {/* HERO */}
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800&q=80" alt="Home Interior Design" className="blog-hero__image" />
+        <img src={homeInterior} alt="Home Interior Design" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Home Interior Design Ideas That Redefine <em>Modern Living</em></h1>

@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import dcHomeTours from '../../assets/blogs/DC Home Tours.jpg';
 
 const dcTours = [
   {
@@ -57,7 +58,7 @@ const DCHomeTours = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800&q=80" alt="Delhi NCR Home Tours" className="blog-hero__image" />
+        <img src={dcHomeTours} alt="Delhi NCR Home Tours" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Exclusive Home Tours Across <em>Delhi NCR</em></h1>

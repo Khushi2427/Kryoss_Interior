@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import diningRoom from '../../assets/blogs/Dining Room.jpg';
 
 const diningIdeas = [
   { icon: '', title: 'Statement Chandelier', desc: 'A dramatic chandelier above the dining table creates an instant focal point and sets the mood for every meal.', image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80' },
@@ -48,7 +49,7 @@ const DiningRoomDesign = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=1800&q=80" alt="Dining Room Design" className="blog-hero__image" />
+        <img src={diningRoom} alt="Dining Room Design" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Dining Room Design Ideas for <em>Memorable Gatherings</em></h1>

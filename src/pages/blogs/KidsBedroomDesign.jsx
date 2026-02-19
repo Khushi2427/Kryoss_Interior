@@ -1,7 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
-
+import kidsBedroom from '../../assets/blogs/Kids Bedroom.jpg';
 const kidsIdeas = [
   { icon: '', title: 'Vibrant Colour Themes', desc: 'Bold, cheerful colours stimulate creativity and make the room feel fun and inviting for children of all ages.', image: 'https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=600&q=80' },
   { icon: '', title: 'Space-Saving Bunk Beds', desc: 'Bunk beds with built-in storage, desks, and play areas maximize floor space in shared or compact bedrooms.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
@@ -48,7 +48,7 @@ const KidsBedroomDesign = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=1800&q=80" alt="Kids Bedroom Design" className="blog-hero__image" />
+        <img src={kidsBedroom} alt="Kids Bedroom Design" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Kids Bedroom Design Ideas for <em>Happy, Creative Spaces</em></h1>

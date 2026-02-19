@@ -1,6 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
+import studyRoom from '../../assets/blogs/Study Room.jpg';
 
 const studyIdeas = [
   { icon: '', title: 'Task Lighting', desc: 'A dedicated desk lamp with adjustable brightness reduces eye strain and improves focus during long study sessions.', image: 'https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=600&q=80' },
@@ -48,7 +49,7 @@ const StudyRoomDesign = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=1800&q=80" alt="Study Room Design" className="blog-hero__image" />
+        <img src={studyRoom} alt="Study Room Design" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Study Room Design Ideas for <em>Maximum Productivity</em></h1>

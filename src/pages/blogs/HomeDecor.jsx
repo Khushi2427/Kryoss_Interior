@@ -1,7 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
-
+import homeDecor from '../../assets/blogs/Home Decor.jpg';
 const decorIdeas = [
   { icon: '', title: 'Gallery Walls', desc: 'Curated collections of art, photos, and prints arranged in a cohesive grid or salon-style display.', image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80' },
   { icon: '', title: 'Indoor Plants', desc: 'From fiddle-leaf figs to trailing pothos, plants add life, colour, and improved air quality to any room.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
@@ -51,7 +51,7 @@ const HomeDecor = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=1800&q=80" alt="Home Decor" className="blog-hero__image" />
+        <img src={homeDecor} alt="Home Decor" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Home Decor Ideas That <em>Elevate Every Space</em></h1>

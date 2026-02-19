@@ -1,7 +1,7 @@
 ﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
-
+import dcDesign from '../../assets/blogs/DC Design.jpg';
 const designers = [
   {
     name: 'Priya Sharma',
@@ -78,7 +78,7 @@ const DCDesignStars = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&q=80" alt="Design Stars" className="blog-hero__image" />
+        <img src={dcDesign} alt="Design Stars" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Meet the Creative Minds <em>Behind Kryoss</em></h1>
