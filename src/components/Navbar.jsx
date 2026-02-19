@@ -187,15 +187,20 @@ const Navbar = () => {
             { label: 'Mysore', path: '/experience-centres?city=Mysore' }
           ]} />
 
-          <NavDropdown title="More" setIsOpen={setIsOpen} items={[
+          <NavDropdown title="More" cols={2} setIsOpen={setIsOpen} items={[
             { label: 'About Us', path: '/about-us' },
-            { label: 'Reviews', path: '/reviews' },
-            { label: 'Videos', path: '/videos' },
             { label: 'Why Kryoss Interior', path: '/why-kryoss-interior' },
             { label: 'Experience Centres', path: '/experience-centres' },
+            { label: 'client Reviews', path: '/reviews' },
+            { label: 'Videos', path: '/videos' },
+            { label: 'FAQs', path: '/faqs' },
+            { label: 'Careers', path: '/careers' },
             { label: 'Become A Design Partner', path: '/become-a-design-partner' },
             { label: 'Become A Franchisee', path: '/become-a-franchisee' },
-            { label: 'FAQs', path: '/faqs' }
+            { label: 'Channel Partner Program', path: '/channel-partner-signup-login' },
+            { label: 'Partner Policy', path: '/partner-policy' },
+            { label: 'Refer a Friend', path: '/refer-friend' },
+            { label: 'Customer Dashboard', path: '/customer-dashboard' }
           ]} />
 
           <div className="mobile-only-contact" style={{ marginTop: 'auto', padding: '1rem', display: window.innerWidth > 1024 ? 'none' : 'block' }}>

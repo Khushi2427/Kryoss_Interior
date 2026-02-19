@@ -70,12 +70,12 @@ import Careers from './pages/more/Careers';
 import PartnerPolicy from './pages/more/PartnerPolicy';
 import ReferFriend from './pages/more/ReferFriend';
 import Videos from './pages/more/Videos';
-import WhyKryossInteriors from './pages/more/WhyKryossInterior';
+import WhyKryoss from './pages/more/WhyKryoss';
 import CustomerDashboard from './pages/more/CustomerDashboard';
-import ChannelPartner from './pages/more/ChannelPartner';
+import ChannelProgram from './pages/more/ChannelProgram';
 import BecomeDesignPartner from './pages/more/BecomeDesignPartner';
 import BecomeFranchisee from './pages/more/BecomeFranchisee';
-import FAQs from './pages/more/FAQs';
+import FAQ from './pages/more/FAQ';
 
 import '@fontsource/inter';
 import '@fontsource/outfit';
@@ -171,12 +171,12 @@ function App() {
           <Route path="/partner-policy" element={<PartnerPolicy />} />
           <Route path="/refer-friend" element={<ReferFriend />} />
           <Route path="/videos" element={<Videos />} />
-          <Route path="/why-kryoss-interior" element={<WhyKryossInteriors />} />
+          <Route path="/why-kryoss-interior" element={<WhyKryoss />} />
           <Route path="/customer-dashboard" element={<CustomerDashboard />} />
-          <Route path="/channel-partner-signup-login" element={<ChannelPartner />} />
+          <Route path="/channel-partner-signup-login" element={<ChannelProgram />} />
           <Route path="/become-a-design-partner" element={<BecomeDesignPartner />} />
           <Route path="/become-a-franchisee" element={<BecomeFranchisee />} />
-          <Route path="/faqs" element={<FAQs />} />
+          <Route path="/faqs" element={<FAQ />} />
         </Routes>
       </main>
       <Footer />

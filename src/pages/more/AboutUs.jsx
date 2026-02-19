@@ -1,79 +1,128 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Heart, Home, DollarSign, Award } from 'lucide-react';
-import '../../components/Features.css';
+import React, { useEffect } from 'react';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import '../blogs/BlogArticle.css';
+import { Target, Users, Layout, ShieldCheck, Clock, Lightbulb, ArrowRight, Heart, Star } from 'lucide-react';
 
-const About = () => {
+const AboutUs = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
-        <div className="page-container" style={{ paddingTop: '6rem' }}>
-            <div className="hero section" style={{ height: '60vh', backgroundPosition: 'center', backgroundImage: 'url(https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1600&q=80)' }}>
-                <div className="hero-overlay"></div>
-                <div className="container hero-content text-center">
-                    <h1>Why <span className="accent-text">KryossInterior</span>?</h1>
-                    <p className="section-subtitle" style={{ color: 'white' }}>Real Homes, For Real People - Like You</p>
-                </div>
-            </div>
+        <div className="blog-page">
+            <Navbar />
 
-            <div className="container section">
-                <div className="grid grid-2">
-                    <motion.div
-                        initial={{ opacity: 0, x: -50 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
-                        className="text-block"
-                    >
-                        <div className="feature-icon"><Heart size={40} /></div>
-                        <h3>It's Your Sanctuary. It's Personal.</h3>
-                        <p>India is home to a wonderful diversity of regions and customs, and 1.3 billion unique individuals. Your KryossInterior home is personalised for whatever makes you, uniquely you. Why should your home be cut from a template, when you're not?</p>
-                    </motion.div>
-                    <div className="img-block">
-                        <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80" alt="Personalized Home" style={{ width: '100%', borderRadius: '20px' }} />
+            {/* Hero Section */}
+            <div className="blog-hero">
+                <img
+                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80"
+                    alt="Kryoss Interior Design Studio"
+                    className="blog-hero__image"
+                />
+                <div className="blog-hero__overlay">
+                    <div className="blog-hero__content">
+                        <span className="blog-hero__tag">About Us</span>
+                        <h1 className="blog-hero__title">Designing Homes That Are<br />Meant to Be <em style={{ color: 'var(--kr-gold)' }}>Lived In</em></h1>
+                        <p className="blog-hero__subtitle">
+                            At Kryoss Interior, we believe interior design is not just about how a space looks — it’s about how it supports everyday life. A well-designed home should feel comfortable, organized, and effortless to live in.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <div className="section" style={{ background: 'var(--surface)' }}>
-                <div className="container">
-                    <div className="grid grid-2 reverse-responsive">
-                        <div className="img-block">
-                            <img src="https://images.unsplash.com/photo-1502005229766-3c8ef9550bb6?auto=format&fit=crop&w=800&q=80" alt="Space Saving" style={{ width: '100%', borderRadius: '20px' }} />
+            <div className="blog-body">
+                {/* Intro Split */}
+                <div className="blog-split">
+                    <div className="blog-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80" alt="Interior Team" />
+                        <div className="blog-image-caption">Teamwork & Vision</div>
+                    </div>
+                    <div>
+                        <div className="section-label">Who We Are</div>
+                        <h2 className="blog-section-title">Thoughtfully Planned <br /><em>Home Interiors</em></h2>
+                        <p style={{ lineHeight: 1.8, color: 'var(--kr-slate-3)', marginBottom: '2rem' }}>
+                            Kryoss Interior is a design-led interior solutions brand offering thoughtfully planned home interiors. We work with homeowners who value clarity, functionality, and long-term comfort.
+                        </p>
+                        <div className="blog-checklist">
+                            {[
+                                "Smart planning & practical layouts",
+                                "Durable materials built to last",
+                                "Designs tailored to real lifestyles",
+                                "Clear communication & transparency"
+                            ].map((item, i) => (
+                                <div key={i} className="blog-checklist__item">
+                                    <div className="blog-checklist__icon">
+                                        <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"></path></svg>
+                                    </div>
+                                    <span className="blog-checklist__text">{item}</span>
+                                </div>
+                            ))}
                         </div>
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.6 }}
-                            className="text-block"
-                        >
-                            <div className="feature-icon"><Home size={40} /></div>
-                            <h3>More Space, More Delight, More Joy.</h3>
-                            <p>We have spent countless hours on design, to make your life simpler. Why go down on your knees to reach the back of the bottom shelf, when it can be a pull-out drawer? Left with an odd unusable space on the wall? Our slim end-units add storage or showcase display pieces.</p>
-                        </motion.div>
                     </div>
                 </div>
-            </div>
 
-            <div className="container section">
-                <div className="grid grid-3 text-center">
-                    <div className="feature-card">
-                        <div className="feature-icon"><DollarSign size={32} /></div>
-                        <h3>Of Course You Can Afford Great Design</h3>
-                        <p>Our designs have won many awards. But our biggest reward is seeing satisfied customers move into their new homes across a range of budgets - from affordable to high-end.</p>
+                {/* Core Beliefs Grid */}
+                <section style={{ marginBottom: '6rem' }}>
+                    <div className="section-label">Our Philosophy</div>
+                    <h2 className="blog-section-title" style={{ maxWidth: '800px', marginBottom: '3rem' }}>What We <em style={{ color: 'var(--kr-red)' }}>Believe In</em></h2>
+
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                        {[
+                            { icon: <Target />, title: 'Function First', desc: 'Spaces that work efficiently before they look good.' },
+                            { icon: <Layout />, title: 'Smart Layouts', desc: 'Optimized layouts and storage solutions for daily ease.' },
+                            { icon: <ShieldCheck />, title: 'Durability', desc: 'Quality materials that last and are easy to maintain.' },
+                            { icon: <Users />, title: 'Transparency', desc: 'Clear communication at every step of the process.' },
+                            { icon: <Lightbulb />, title: 'Tailored Design', desc: 'Designs reflecting real lifestyles, not just trends.' },
+                            { icon: <Heart />, title: 'Comfort', desc: 'Homes designed for comfort, clarity, and care.' }
+                        ].map((item, index) => (
+                            <div key={index} className="blog-card">
+                                <div className="blog-card__icon">{item.icon}</div>
+                                <h3 className="blog-card__title">{item.title}</h3>
+                                <p className="blog-card__desc">{item.desc}</p>
+                            </div>
+                        ))}
                     </div>
-                    <div className="feature-card">
-                        <div className="feature-icon"><Award size={32} /></div>
-                        <h3>Control Freaks About Quality</h3>
-                        <p>Our own designers. Our own factory. Our own workforce. Yes, we are control freaks about quality.</p>
-                    </div>
-                    <div className="feature-card">
-                        <div className="feature-icon"><Heart size={32} /></div>
-                        <h3>Design Democracy</h3>
-                        <p>We believe great design should be accessible to everyone, irrespective of their budget.</p>
+                </section>
+
+                {/* Dark Section: Commitment */}
+                <div className="blog-dark-section" style={{ textAlign: 'center' }}>
+                    <h2 className="blog-section-title" style={{ color: '#fff' }}>Our <em style={{ color: 'var(--kr-gold)' }}>Commitment</em></h2>
+                    <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.9)', maxWidth: '800px', margin: '0 auto 3rem', lineHeight: 1.8 }}>
+                        We are committed to creating homes that feel calm, functional, and thoughtfully designed. Spaces where everything has a purpose, and nothing feels forced. Because good interiors should make life easier — every single day.
+                    </p>
+                    <div style={{ fontFamily: 'Cormorant Garamond, serif', fontSize: '2rem', color: 'var(--kr-gold)', fontStyle: 'italic' }}>
+                        "A home is not a showpiece. It’s a place where life happens."
                     </div>
                 </div>
+
+                {/* Design Approach Process */}
+                <section style={{ marginBottom: '6rem' }}>
+                    <h2 className="blog-section-title">Our Design <em style={{ color: 'var(--kr-red)' }}>Approach</em></h2>
+                    <div className="blog-process">
+                        {[
+                            { title: 'Understanding Your Lifestyle', desc: 'We begin by learning how you live, use space, and store things.' },
+                            { title: 'Thoughtful Planning', desc: 'Layouts are planned to improve movement, comfort, and functionality.' },
+                            { title: 'Material Selection', desc: 'We recommend materials based on durability, usage, and maintenance.' },
+                            { title: 'Consistent Language', desc: 'Every room connects visually and functionally with the rest of the home.' },
+                            { title: 'Smooth Execution', desc: 'Clear timelines, coordination, and quality checks ensure reliable delivery.' }
+                        ].map((step, i) => (
+                            <div key={i} className="blog-process__step" style={{ marginBottom: '1.5rem' }}>
+                                <div className="blog-process__num">0{i + 1}</div>
+                                <div>
+                                    <h3 className="blog-process__content-title">{step.title}</h3>
+                                    <p className="blog-process__content-desc">{step.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
             </div>
 
+            <Footer />
         </div>
     );
 };
 
-export default About;
+export default AboutUs;
