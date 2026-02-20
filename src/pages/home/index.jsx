@@ -7,38 +7,22 @@ import { ArrowRight, Star, PlayCircle, Calculator, ChevronRight, UserCheck, Shie
 import '../../components/Features.css';
 import '../blogs/BlogArticle.css';
 import './Home.css';
-<<<<<<< HEAD
 
 const Home = () => {
 
-=======
-import hero from '../../assets/Home/hero.png';
-
-const Home = () => {
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
     return (
         <div className="blog-page">
             {/* Hero Section - Redesigned with Original Content */}
             <div className="blog-hero">
-<<<<<<< HEAD
                 <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1600&q=85" alt="Luxury Interior" className="blog-hero__image" />
-=======
-                <img src={hero} alt="Luxury Interior" className="blog-hero__image" />
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Home Interiors <br /><em style={{ color: 'var(--kr-gold)' }}>Made Easy</em></h1>
                         <p className="blog-hero__subtitle">Transform your living space with expert guidance from 400+ top designers. We handle everything from concept to flawless installation.</p>
                         <div className="hero-cta-group">
-<<<<<<< HEAD
                             <Link to="/contact-us" className="hero-btn hero-btn-primary">
                                 Book Free Consultation <ArrowRight size={20} style={{ marginLeft: '10px' }} />
                             </Link>
-=======
-                            <button className="hero-btn hero-btn-primary">
-                                Book Free Consultation <ArrowRight size={20} style={{ marginLeft: '10px' }} />
-                            </button>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                             <Link to="/projects" className="hero-btn hero-btn-outline">
                                 View Recent Projects
                             </Link>
@@ -333,7 +317,6 @@ const Home = () => {
 
             {/* CTA / Booking Form - Redesigned */}
             <section className="section" style={{ background: 'var(--kr-red)', color: 'white', padding: '4rem 0' }}>
-<<<<<<< HEAD
                 <div className="container" style={{ textAlign: 'center' }}>
                     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                         <h2 style={{ color: 'white', fontSize: '3.5rem', lineHeight: '1.1', marginBottom: '1.5rem', fontFamily: 'Outfit, sans-serif' }}>Ready to Design Your <br /><em>Dream Home?</em></h2>
@@ -359,67 +342,6 @@ const Home = () => {
                             border: 'none',
                             textDecoration: 'none'
                         }}>Get Free Quote</Link>
-=======
-                <div className="container">
-                    <div className="grid grid-2 reverse-responsive" style={{ alignItems: 'center', gap: '4rem' }}>
-                        <div>
-                            <h2 style={{ color: 'white', fontSize: '3.5rem', lineHeight: '1.1', marginBottom: '1.5rem', fontFamily: 'Outfit, sans-serif' }}>Ready to Design Your <br /><em>Dream Home?</em></h2>
-                            <p style={{ margin: '1rem 0', fontSize: '1.25rem', opacity: 0.9, lineHeight: '1.6' }}>Book a free consultation with our expert designers today. Get personalized designs, rough estimates, and more.</p>
-                            <ul style={{ listStyle: 'none', marginTop: '2.5rem' }}>
-                                {[
-                                    "400+ Designers",
-                                    "45-Days Move-in Guarantee",
-                                    "10 Year Warranty"
-                                ].map((item, i) => (
-                                    <li key={i} style={{ marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '15px', fontSize: '1.2rem', fontWeight: 500 }}>
-                                        <div style={{ background: 'white', color: 'var(--kr-red)', width: '30px', height: '30px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><Star size={16} fill="var(--kr-red)" /></div>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        {/* Glassmorphism Booking Form */}
-                        <div className="booking-form-card" style={{
-                            background: 'rgba(255, 255, 255, 0.1)',
-                            backdropFilter: 'blur(12px)',
-                            border: '1px solid rgba(255, 255, 255, 0.2)',
-                            borderRadius: '24px',
-                            padding: '3rem',
-                            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
-                        }}>
-                            <h3 className="text-center" style={{ marginBottom: '2rem', fontSize: '2rem', color: '#fff', fontFamily: 'Outfit, sans-serif' }}>Book Free Consultation</h3>
-                            <form>
-                                {['Name', 'Email', 'Mobile Number', 'Property Location'].map((placeholder, i) => (
-                                    <div className="form-group" key={i} style={{ marginBottom: '1.25rem' }}>
-                                        <input type="text" placeholder={placeholder} className="form-input" style={{
-                                            background: 'rgba(0, 0, 0, 0.2)',
-                                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                                            color: '#fff',
-                                            padding: '1rem 1.5rem',
-                                            borderRadius: '12px',
-                                            width: '100%',
-                                            fontSize: '1rem',
-                                            outline: 'none'
-                                        }} />
-                                    </div>
-                                ))}
-
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '2rem', fontSize: '0.95rem', color: 'rgba(255,255,255,0.8)' }}>
-                                    <input type="checkbox" id="whatsapp" style={{ width: '18px', height: '18px', accentColor: '#25D366' }} />
-                                    <label htmlFor="whatsapp" style={{ cursor: 'pointer' }}>Enable WhatsApp updates</label>
-                                </div>
-                                <div style={{ textAlign: 'center' }}>
-                                    <button className="btn" style={{
-                                        width: '100%', padding: '1.2rem', fontSize: '1.1rem',
-                                        background: '#fff', color: 'var(--kr-red)', fontWeight: '700',
-                                        borderRadius: '50px', boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
-                                        transition: 'transform 0.2s'
-                                    }}>Get Free Quote</button>
-                                </div>
-                            </form>
-                        </div>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                     </div>
                 </div>
             </section>

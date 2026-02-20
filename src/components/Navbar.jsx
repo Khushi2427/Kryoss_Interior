@@ -178,27 +178,11 @@ const Navbar = () => {
             { label: 'DC Updates', path: '/blogs/dc-updates' }
           ]} />
 
-<<<<<<< HEAD
           <Link to="/experience-centres" className="nav-link-text" onClick={() => setIsOpen(false)}>Experience Centres</Link>
-=======
-          <NavDropdown title="Cities" cols={2} setIsOpen={setIsOpen} items={[
-            { label: 'Bengaluru', path: '/experience-centres?city=Bengaluru' },
-            { label: 'Mumbai', path: '/experience-centres?city=Mumbai' },
-            { label: 'Hyderabad', path: '/experience-centres?city=Hyderabad' },
-            { label: 'Chennai', path: '/experience-centres?city=Chennai' },
-            { label: 'Pune', path: '/experience-centres?city=Pune' },
-            { label: 'Mysore', path: '/experience-centres?city=Mysore' }
-          ]} />
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
 
           <NavDropdown title="More" cols={2} setIsOpen={setIsOpen} items={[
             { label: 'About Us', path: '/about-us' },
             { label: 'Why Kryoss Interior', path: '/why-kryoss-interior' },
-<<<<<<< HEAD
-
-=======
-            { label: 'Experience Centres', path: '/experience-centres' },
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
             { label: 'client Reviews', path: '/reviews' },
             { label: 'Videos', path: '/videos' },
             { label: 'FAQs', path: '/faqs' },

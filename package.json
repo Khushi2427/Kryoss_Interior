@@ -10,10 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@emailjs/browser": "^4.4.1",
-=======
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
     "@fontsource/inter": "^5.2.8",
     "@fontsource/outfit": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",

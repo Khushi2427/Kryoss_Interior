@@ -46,7 +46,6 @@ const Footer = () => {
                     <h4>Contact Us</h4>
                     <div className="contact-item">
                         <Phone size={18} />
-<<<<<<< HEAD
                         <span>+0124-4001495</span>
                     </div>
                     <div className="contact-item">
@@ -56,17 +55,6 @@ const Footer = () => {
                     <div className="contact-item">
                         <MapPin size={18} />
                         <span>1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India</span>
-=======
-                        <span>1800 120 1234</span>
-                    </div>
-                    <div className="contact-item">
-                        <Mail size={18} />
-                        <span>hello@kryossinterior.com</span>
-                    </div>
-                    <div className="contact-item">
-                        <MapPin size={18} />
-                        <span>St. Marks Road, Bengaluru, Karnataka</span>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                     </div>
                 </div>
             </div>

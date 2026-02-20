@@ -210,11 +210,7 @@ const DCDesignStars = () => {
         <div ref={reg('cta')} data-section="cta" className="blog-cta-section" style={{ marginBottom: '4rem' }}>
           <h2 className="blog-cta-section__title">Work with Our <em style={{ fontStyle: 'italic', color: '#c9a96e' }}>Design Stars</em></h2>
           <p className="blog-cta-section__subtitle">Connect with our expert designers and start your journey to a beautifully designed home.</p>
-<<<<<<< HEAD
           <Link to="/contact-us" className="blog-cta-section__btn">
-=======
-          <Link to="/contact" className="blog-cta-section__btn">
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
             Book a Consultation
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>

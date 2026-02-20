@@ -30,17 +30,10 @@ const collections = [
     { title: 'Home Office Designs', link: '/design-gallery/home-office-designs', image: homeOffice, tag: 'Office', desc: 'Executive offices and creative studios' },
     { title: 'Kids Bedroom Designs', link: '/design-gallery/kids-bedroom-designs', image: kidsBedroom, tag: 'Kids', desc: 'Age-appropriate, fun and functional spaces' },
     { title: 'Space Saving Designs', link: '/design-gallery/space-saving-designs', image: spaceSaving, tag: 'Space Saving', desc: 'Murphy beds, hidden storage and smart solutions' },
-<<<<<<< HEAD
     { title: '1-BHK Interior Designs', link: '/design-gallery/1-bhk-interior-designs', image: oneBhk, tag: '1BHK', desc: 'Compact, smart and beautifully designed' },
     { title: '2-BHK Interior Designs', link: '/design-gallery/2-bhk-interior-designs', image: twoBhk, tag: '2BHK', desc: 'The perfect family home, fully designed' },
     { title: '3-BHK Interior Designs', link: '/design-gallery/3-bhk-interior-designs', image: threeBhk, tag: '3BHK', desc: 'Luxury living, fully realised' },
     { title: 'Customise Your Kitchen', link: '/design-gallery/customise-your-kitchen', image: customiseKitchen, tag: 'Custom', desc: 'Bespoke kitchens designed for you' },
-=======
-    { title: '1BHK Interiors', link: '/design-gallery/1bhk-designs', image: oneBhk, tag: '1BHK', desc: 'Compact, smart and beautifully designed' },
-    { title: '2BHK Interiors', link: '/design-gallery/2bhk-designs', image: twoBhk, tag: '2BHK', desc: 'The perfect family home, fully designed' },
-    { title: '3BHK Interiors', link: '/design-gallery/3bhk-designs', image: threeBhk, tag: '3BHK', desc: 'Luxury living, fully realised' },
-    { title: 'Customise Kitchen', link: '/design-gallery/customise-kitchen', image: customiseKitchen, tag: 'Custom', desc: 'Bespoke kitchens designed for you' },
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
 ];
 
 const DesignGallery = () => {
@@ -203,11 +196,7 @@ const DesignGallery = () => {
                 <div ref={reg('cta')} data-section="cta" className="blog-cta-section" style={{ marginBottom: '4rem' }}>
                     <h2 className="blog-cta-section__title">Ready to Transform Your <em style={{ fontStyle: 'italic', color: '#c9a96e' }}>Space?</em></h2>
                     <p className="blog-cta-section__subtitle">Book a free consultation with our design experts. Get personalised recommendations and a detailed estimate for your dream home.</p>
-<<<<<<< HEAD
                     <Link to="/contact-us" className="blog-cta-section__btn">Book Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
-=======
-                    <Link to="/contact" className="blog-cta-section__btn">Book Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 </div>
             </div>
         </div>

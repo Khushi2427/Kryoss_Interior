@@ -14,11 +14,7 @@ const BlogLayout = ({ title, subtitle, tag, heroImage, children }) => {
                             <h1 className="blog-title" style={{ fontSize: '2.8rem', marginTop: '0.75rem', color: '#ffffff' }}>{title}</h1>
                             {subtitle && <p className="blog-subtitle" style={{ marginTop: '0.8rem', color: 'rgba(255,255,255,0.9)' }}>{subtitle}</p>}
                             <div style={{ marginTop: '1.25rem' }}>
-<<<<<<< HEAD
                                 <Link to="/contact-us" className="cta-button">Book Free Consultation</Link>
-=======
-                                <Link to="/contact" className="cta-button">Book Free Consultation</Link>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                             </div>
                         </div>
                     </div>

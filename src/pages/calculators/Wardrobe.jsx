@@ -207,11 +207,7 @@ export default function WardrobeCalculator() {
                 ))}
               </div>
 
-<<<<<<< HEAD
               <Link to="/contact-us" style={{ display: 'block', width: '100%', padding: '1rem', background: '#fff', color: '#c41e3a', textAlign: 'center', textDecoration: 'none', fontWeight: 700, borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-=======
-              <Link to="/contact" style={{ display: 'block', width: '100%', padding: '1rem', background: '#fff', color: '#c41e3a', textAlign: 'center', textDecoration: 'none', fontWeight: 700, borderRadius: '4px', textTransform: 'uppercase', letterSpacing: '1px' }}>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 Book Consultation
               </Link>
             </div>

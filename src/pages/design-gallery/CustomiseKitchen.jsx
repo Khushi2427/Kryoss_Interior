@@ -224,11 +224,7 @@ const CustomiseKitchen = () => {
                 <div ref={reg('cta')} data-section="cta" className="blog-cta-section" style={{ marginBottom: '4rem' }}>
                     <h2 className="blog-cta-section__title">Start Designing Your <em style={{ fontStyle: 'italic', color: '#c9a96e' }}>Custom Kitchen</em></h2>
                     <p className="blog-cta-section__subtitle">Book a free consultation and let our designers bring your dream kitchen to life - exactly as you imagined it.</p>
-<<<<<<< HEAD
                     <Link to="/contact-us" className="blog-cta-section__btn">Book a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
-=======
-                    <Link to="/contact" className="blog-cta-section__btn">Book a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 </div>
             </div>
         </div>

@@ -165,11 +165,7 @@ const FullHome = () => {
                 <div ref={reg('cta')} data-section="cta" className="blog-cta-section" style={{ marginBottom: '4rem' }}>
                     <h2 className="blog-cta-section__title">Transform Your <em style={{ fontStyle: 'italic', color: '#c9a96e' }}>Entire Home</em></h2>
                     <p className="blog-cta-section__subtitle">Book a free consultation and let our team design every room of your home to perfection.</p>
-<<<<<<< HEAD
                     <Link to="/contact-us" className="blog-cta-section__btn">Get a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
-=======
-                    <Link to="/contact" className="blog-cta-section__btn">Get a Free Consultation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg></Link>
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                 </div>
             </div>
         </div>

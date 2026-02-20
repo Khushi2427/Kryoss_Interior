@@ -147,11 +147,7 @@ const DCUpdates = () => {
         <div ref={reg('cta')} data-section="cta" className="blog-cta-section" style={{ marginBottom: '4rem' }}>
           <h2 className="blog-cta-section__title">Be Part of the <em style={{ fontStyle: 'italic', color: '#c9a96e' }}>Kryoss Story</em></h2>
           <p className="blog-cta-section__subtitle">Join hundreds of homeowners who have trusted Kryoss Interior to design their dream home.</p>
-<<<<<<< HEAD
           <Link to="/contact-us" className="blog-cta-section__btn">
-=======
-          <Link to="/contact" className="blog-cta-section__btn">
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
             Start Your Journey
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
           </Link>

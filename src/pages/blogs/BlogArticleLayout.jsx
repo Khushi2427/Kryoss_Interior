@@ -69,11 +69,7 @@ const BlogArticleLayout = ({
                             {title} {titleAccent && <em>{titleAccent}</em>}
                         </h1>
                         {subtitle && <p className="blog-hero__subtitle">{subtitle}</p>}
-<<<<<<< HEAD
                         <Link to="/contact-us" className="blog-hero__cta">
-=======
-                        <Link to="/contact" className="blog-hero__cta">
->>>>>>> 375527e245dfa4c8b892ee1d1f1aedc125461d15
                             Book Free Consultation
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                                 <path d="M5 12h14M12 5l7 7-7 7" />
