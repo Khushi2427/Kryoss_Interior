@@ -2,14 +2,50 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import oneBhk from '../../assets/design-gallery/1-bhk.jpg';
+import layered from '../../assets/design-gallery/one/layered.png';
+import light from '../../assets/design-gallery/one/light.png';
+import mirror from '../../assets/design-gallery/one/mirror.png';
+import multi from '../../assets/design-gallery/one/multi.png';
+import open from '../../assets/design-gallery/one/open.png';
+import vertical from '../../assets/design-gallery/one/vertical.png';
 
 const ideas = [
-    { icon: '', title: 'Open-Plan Living', desc: 'Combine the living, dining and kitchen into one flowing space to maximize the feeling of openness in a compact 1BHK.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Mirror Magic', desc: 'Strategically placed mirrors double the perceived space and bounce natural light throughout the apartment.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
-    { icon: '', title: 'Multi-Function Furniture', desc: 'Sofa beds, storage ottomans, fold-down dining tables and murphy beds maximize utility in every square foot.', image: 'https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=600&q=80' },
-    { icon: '', title: 'Vertical Storage', desc: 'Floor-to-ceiling shelving and wall-mounted storage units free up floor space and draw the eye upward.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { icon: '', title: 'Light Colour Palette', desc: 'Whites, creams and soft pastels make a 1BHK feel airy and spacious - add personality through accessories.', image: 'https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=600&q=80' },
-    { icon: '', title: 'Layered Lighting', desc: 'Multiple light sources at different heights create depth and make a small apartment feel warm and inviting.', image: 'https://images.unsplash.com/photo-1513506003901-1e6a35f7a0b4?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Open-Plan Living', 
+        desc: 'Combine the living, dining and kitchen into one flowing space to maximize the feeling of openness in a compact 1BHK.', 
+        image: open
+    },
+    { 
+        icon: '', 
+        title: 'Mirror Magic', 
+        desc: 'Strategically placed mirrors double the perceived space and bounce natural light throughout the apartment.', 
+        image: mirror
+    },
+    { 
+        icon: '', 
+        title: 'Multi-Function Furniture', 
+        desc: 'Sofa beds, storage ottomans, fold-down dining tables and murphy beds maximize utility in every square foot.', 
+        image: multi
+    },
+    { 
+        icon: '', 
+        title: 'Vertical Storage', 
+        desc: 'Floor-to-ceiling shelving and wall-mounted storage units free up floor space and draw the eye upward.', 
+        image: vertical
+    },
+    { 
+        icon: '', 
+        title: 'Light Colour Palette', 
+        desc: 'Whites, creams and soft pastels make a 1BHK feel airy and spacious - add personality through accessories.', 
+        image: light
+    },
+    { 
+        icon: '', 
+        title: 'Layered Lighting', 
+        desc: 'Multiple light sources at different heights create depth and make a small apartment feel warm and inviting.', 
+        image: layered
+    },
 ];
 
 const faqs = [
@@ -96,7 +132,7 @@ const OneBHK = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=1600&q=80" alt="1BHK Interior - Kryoss Interior" />
+                    <img src={multi} alt="1BHK Interior - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Modern 1BHK Interior Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +171,7 @@ const OneBHK = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="1BHK Living Dining" />
+                            <img src={mirror} alt="1BHK Living Dining" />
                         </div>
                     </div>
 
@@ -156,7 +192,7 @@ const OneBHK = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=900&q=80" alt="1BHK Bedroom" />
+                            <img src={open} alt="1BHK Bedroom" />
                         </div>
                     </div>
                 </section>

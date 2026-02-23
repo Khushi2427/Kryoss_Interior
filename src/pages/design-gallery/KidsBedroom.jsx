@@ -2,14 +2,50 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import kidsBedroom from '../../assets/design-gallery/kids-bedroom.jpg';
+import bunkbeds from '../../assets/design-gallery/kids/bunkbeds.png';
+import childsafe from '../../assets/design-gallery/kids/childsafe.png';
+import studyzone from '../../assets/design-gallery/kids/studyzone.png';
+import themebased from '../../assets/design-gallery/kids/themebased.png';
+import toystorage from '../../assets/design-gallery/kids/toystorage.png';
+import vibrant from '../../assets/design-gallery/kids/vibrant.png';
 
 const ideas = [
-    { icon: '', title: 'Vibrant Colour Themes', desc: 'Bold, cheerful colours stimulate creativity and make the room feel fun and inviting for children of all ages.', image: 'https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=600&q=80' },
-    { icon: '', title: 'Space-Saving Bunk Beds', desc: 'Bunk beds with built-in storage, desks and play areas maximize floor space in shared or compact bedrooms.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-    { icon: '', title: 'Dedicated Study Zone', desc: 'A well-lit, ergonomic study area with ample storage for books and supplies supports learning and focus.', image: 'https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=600&q=80' },
-    { icon: '', title: 'Smart Toy Storage', desc: 'Built-in cubbies, colourful bins and low shelves make it easy for children to organize and access their toys.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-    { icon: '', title: 'Theme-Based Designs', desc: 'From space adventures to enchanted forests, themed bedrooms spark imagination and make bedtime exciting.', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
-    { icon: '', title: 'Child-Safe Materials', desc: 'Non-toxic paints, rounded furniture edges and anti-tip fixtures ensure a safe environment for active children.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Vibrant Colour Themes', 
+        desc: 'Bold, cheerful colours stimulate creativity and make the room feel fun and inviting for children of all ages.', 
+        image: vibrant 
+    },
+    { 
+        icon: '', 
+        title: 'Space-Saving Bunk Beds', 
+        desc: 'Bunk beds with built-in storage, desks and play areas maximize floor space in shared or compact bedrooms.', 
+        image: bunkbeds 
+    },
+    { 
+        icon: '', 
+        title: 'Dedicated Study Zone', 
+        desc: 'A well-lit, ergonomic study area with ample storage for books and supplies supports learning and focus.', 
+        image: studyzone 
+    },
+    { 
+        icon: '', 
+        title: 'Smart Toy Storage', 
+        desc: 'Built-in cubbies, colourful bins and low shelves make it easy for children to organize and access their toys.', 
+        image: toystorage 
+    },
+    { 
+        icon: '', 
+        title: 'Theme-Based Designs', 
+        desc: 'From space adventures to enchanted forests, themed bedrooms spark imagination and make bedtime exciting.', 
+        image: themebased 
+    },
+    { 
+        icon: '', 
+        title: 'Child-Safe Materials', 
+        desc: 'Non-toxic paints, rounded furniture edges and anti-tip fixtures ensure a safe environment for active children.', 
+        image: childsafe 
+    },
 ];
 
 const faqs = [
@@ -96,7 +132,7 @@ const KidsBedroom = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Kids Bedroom - Kryoss Interior" />
+                    <img src={vibrant} alt="Kids Bedroom - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Creative Kids Bedroom Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -133,7 +169,7 @@ const KidsBedroom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=900&q=80" alt="Young Children Bedroom" />
+                            <img src={childsafe} alt="Young Children Bedroom" />
                         </div>
                     </div>
 
@@ -152,7 +188,7 @@ const KidsBedroom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=900&q=80" alt="Teen Bedroom Design" />
+                            <img src={studyzone}alt="Teen Bedroom Design" />
                         </div>
                     </div>
                 </section>

@@ -2,14 +2,53 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import threeBhk from '../../assets/design-gallery/3-bhk.jpg';
+import extra from '../../assets/design-gallery/three/extra.png';
+import Private from '../../assets/design-gallery/three/private.png';
+import twoBhk from '../../assets/design-gallery/2-bhk.jpg';
+import balcony from '../../assets/design-gallery/two/balcony.png';
+import cohesive from '../../assets/design-gallery/two/cohesive.png';
+import living from '../../assets/design-gallery/two/living.png';
+import master from '../../assets/design-gallery/two/master.png';
+import modular from '../../assets/design-gallery/two/modular.png';
+import study from '../../assets/design-gallery/two/study.png';
 
 const ideas = [
-    { icon: '', title: 'Grand Living Room', desc: 'A 3BHK living room can accommodate a full sectional sofa, a formal dining area and a dedicated entertainment zone.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Chef\'s Kitchen', desc: 'A spacious modular kitchen with an island, premium appliances and a separate utility area for the serious home cook.', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&q=80' },
-    { icon: '', title: 'Three Distinct Bedrooms', desc: 'Design each bedroom with a unique character - master suite, kids room and guest room - each with its own personality.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
-    { icon: '', title: 'Home Library', desc: 'A dedicated reading nook or home library with floor-to-ceiling bookshelves adds intellectual character to the home.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { icon: '', title: 'Entertainment Room', desc: 'Convert the third bedroom into a dedicated home theatre, gaming room or family entertainment space.', image: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80' },
-    { icon: '', title: 'Terrace Garden', desc: 'If you have a terrace or large balcony, design it as an outdoor living room with plants, seating and ambient lighting.', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Grand Living Room', 
+        desc: 'A 3BHK living room can accommodate a full sectional sofa, a formal dining area and a dedicated entertainment zone.', 
+        image: living
+    },
+    { 
+        icon: '', 
+        title: "Chef's Kitchen", 
+        desc: 'A spacious modular kitchen with an island, premium appliances and a separate utility area for the serious home cook.', 
+        image: modular
+    },
+    { 
+        icon: '', 
+        title: 'Three Distinct Bedrooms', 
+        desc: 'Design each bedroom with a unique character - master suite, kids room and guest room - each with its own personality.', 
+        image: master
+    },
+    { 
+        icon: '', 
+        title: 'Home Library', 
+        desc: 'A dedicated reading nook or home library with floor-to-ceiling bookshelves adds intellectual character to the home.', 
+        image: study
+    },
+    { 
+        icon: '', 
+        title: 'Entertainment Room', 
+        desc: 'Convert the third bedroom into a dedicated home theatre, gaming room or family entertainment space.', 
+        image: cohesive
+    },
+    { 
+        icon: '', 
+        title: 'Terrace Garden', 
+        desc: 'If you have a terrace or large balcony, design it as an outdoor living room with plants, seating and ambient lighting.', 
+        image: balcony
+    },
 ];
 
 const faqs = [
@@ -96,7 +135,7 @@ const ThreeBHK = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80" alt="3BHK Interior - Kryoss Interior" />
+                    <img src={living} alt="3BHK Interior - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Luxury 3BHK Interior Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +174,7 @@ const ThreeBHK = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=80" alt="3BHK Living Area" />
+                            <img src={extra}alt="3BHK Living Area" />
                         </div>
                     </div>
 
@@ -156,7 +195,7 @@ const ThreeBHK = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?w=900&q=80" alt="3BHK Master Bedroom" />
+                            <img src={Private} alt="3BHK Master Bedroom" />
                         </div>
                     </div>
                 </section>

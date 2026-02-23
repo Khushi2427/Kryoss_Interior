@@ -2,16 +2,51 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import twoBhk from '../../assets/design-gallery/2-bhk.jpg';
+import balcony from '../../assets/design-gallery/two/balcony.png';
+import cohesive from '../../assets/design-gallery/two/cohesive.png';
+import living from '../../assets/design-gallery/two/living.png';
+import master from '../../assets/design-gallery/two/master.png';
+import modular from '../../assets/design-gallery/two/modular.png';
+import study from '../../assets/design-gallery/two/study.png';
 
 const ideas = [
-    { icon: '', title: 'Defined Living Zones', desc: 'A 2BHK allows for a proper separation of living, dining and sleeping areas - each with its own character and function.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Master Suite', desc: 'Dedicate the larger bedroom to a luxurious master suite with an attached bathroom and walk-in wardrobe.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
-    { icon: '', title: 'Modular Kitchen', desc: 'A well-designed modular kitchen with an island or breakfast counter adds functionality and style to the heart of the home.', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&q=80' },
-    { icon: '', title: 'Balcony Integration', desc: 'Extend your living space by designing the balcony as an outdoor lounge or garden, connected visually to the interior.', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80' },
-    { icon: '', title: 'Study Nook', desc: 'Convert the second bedroom into a dual-purpose guest room and home office with a murphy bed and built-in desk.', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80' },
-    { icon: '', title: 'Cohesive Palette', desc: 'A consistent colour palette across all rooms creates a sense of flow and makes the apartment feel larger and more unified.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Defined Living Zones', 
+        desc: 'A 2BHK allows for a proper separation of living, dining and sleeping areas - each with its own character and function.', 
+        image: living
+    },
+    { 
+        icon: '', 
+        title: 'Master Suite', 
+        desc: 'Dedicate the larger bedroom to a luxurious master suite with an attached bathroom and walk-in wardrobe.', 
+        image: master
+    },
+    { 
+        icon: '', 
+        title: 'Modular Kitchen', 
+        desc: 'A well-designed modular kitchen with an island or breakfast counter adds functionality and style to the heart of the home.', 
+        image: modular
+    },
+    { 
+        icon: '', 
+        title: 'Balcony Integration', 
+        desc: 'Extend your living space by designing the balcony as an outdoor lounge or garden, connected visually to the interior.', 
+        image: balcony
+    },
+    { 
+        icon: '', 
+        title: 'Study Nook', 
+        desc: 'Convert the second bedroom into a dual-purpose guest room and home office with a murphy bed and built-in desk.', 
+        image: study
+    },
+    { 
+        icon: '', 
+        title: 'Cohesive Palette', 
+        desc: 'A consistent colour palette across all rooms creates a sense of flow and makes the apartment feel larger and more unified.', 
+        image: cohesive
+    },
 ];
-
 const faqs = [
     { q: 'What is the ideal interior design budget for a 2BHK?', a: 'A complete 2BHK interior design typically costs between Rs. 8-15 lakhs for a standard finish and Rs. 15-25 lakhs for a premium finish, depending on size, materials and customization level.' },
     { q: 'How do I make a 2BHK feel more spacious?', a: 'Use an open-plan layout for the living and dining areas, choose furniture proportional to the room size, use mirrors strategically and maintain a consistent, light colour palette throughout.' },
@@ -96,7 +131,7 @@ const TwoBHK = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1600&q=80" alt="2BHK Interior - Kryoss Interior" />
+                    <img src={cohesive} alt="2BHK Interior - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Modern 2BHK Interior Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +170,7 @@ const TwoBHK = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="2BHK Living Dining" />
+                            <img src={living} alt="2BHK Living Dining" />
                         </div>
                     </div>
 
@@ -156,7 +191,7 @@ const TwoBHK = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=900&q=80" alt="2BHK Bedroom" />
+                            <img src={master} alt="2BHK Bedroom" />
                         </div>
                     </div>
                 </section>

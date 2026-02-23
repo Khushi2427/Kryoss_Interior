@@ -2,14 +2,50 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import diningRoom from '../../assets/design-gallery/dining-room.jpg';
+import accent from '../../assets/design-gallery/dining/Accent.png';
+import crockery from '../../assets/design-gallery/dining/crockery.png';
+import green from '../../assets/design-gallery/dining/green.png';
+import mixed from '../../assets/design-gallery/dining/mixed.png';
+import natural from '../../assets/design-gallery/dining/natural.png';
+import statement from '../../assets/design-gallery/dining/statement.png';
 
 const ideas = [
-    { icon: '', title: 'Statement Chandelier', desc: 'A dramatic chandelier above the dining table creates an instant focal point and sets the mood for every meal.', image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80' },
-    { icon: '', title: 'Mixed Seating', desc: 'Combine upholstered chairs with benches or stools for a relaxed, eclectic dining experience.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
-    { icon: '', title: 'Greenery & Centrepieces', desc: 'Fresh flowers, potted herbs or sculptural plants bring life and freshness to the dining table.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
-    { icon: '', title: 'Natural Light', desc: 'Position the dining area near windows to maximize natural light - it makes food look better and meals feel more pleasant.', image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80' },
-    { icon: '', title: 'Accent Walls', desc: 'A bold wallpaper or textured accent wall behind the dining table adds drama and depth to the space.', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
-    { icon: '', title: 'Crockery Display', desc: 'Open shelving or glass-front cabinets to display curated crockery, glassware and decorative pieces.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Statement Chandelier', 
+        desc: 'A dramatic chandelier above the dining table creates an instant focal point and sets the mood for every meal.', 
+        image: statement 
+    },
+    { 
+        icon: '', 
+        title: 'Mixed Seating', 
+        desc: 'Combine upholstered chairs with benches or stools for a relaxed, eclectic dining experience.', 
+        image: mixed 
+    },
+    { 
+        icon: '', 
+        title: 'Greenery & Centrepieces', 
+        desc: 'Fresh flowers, potted herbs or sculptural plants bring life and freshness to the dining table.', 
+        image: green 
+    },
+    { 
+        icon: '', 
+        title: 'Natural Light', 
+        desc: 'Position the dining area near windows to maximize natural light - it makes food look better and meals feel more pleasant.', 
+        image: natural 
+    },
+    { 
+        icon: '', 
+        title: 'Accent Walls', 
+        desc: 'A bold wallpaper or textured accent wall behind the dining table adds drama and depth to the space.', 
+        image: accent 
+    },
+    { 
+        icon: '', 
+        title: 'Crockery Display', 
+        desc: 'Open shelving or glass-front cabinets to display curated crockery, glassware and decorative pieces.', 
+        image: crockery 
+    },
 ];
 
 const faqs = [
@@ -96,7 +132,7 @@ const DiningRoom = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80" alt="Elegant Dining Room - Kryoss Interior" />
+                    <img src={natural} alt="Elegant Dining Room - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Elegant Dining Room Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +171,7 @@ const DiningRoom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=900&q=80" alt="Formal Dining Room" />
+                            <img src={statement} alt="Formal Dining Room" />
                         </div>
                     </div>
 
@@ -156,7 +192,7 @@ const DiningRoom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=80" alt="Open Plan Dining" />
+                            <img src={green} alt="Open Plan Dining" />
                         </div>
                     </div>
                 </section>

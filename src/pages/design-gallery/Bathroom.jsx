@@ -2,14 +2,50 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import bathroomDesigns from '../../assets/design-gallery/bathroom-designs.jpg';
+import biophillic from '../../assets/design-gallery/bathroom/biophillic.png';
+import bright from '../../assets/design-gallery/bathroom/bright.png';
+import classic from '../../assets/design-gallery/bathroom/classic.png';
+import compact from '../../assets/design-gallery/bathroom/compact.png';
+import dark from '../../assets/design-gallery/bathroom/dark.png';
+import spa from '../../assets/design-gallery/bathroom/spa.png';
 
 const ideas = [
-    { icon: '', title: 'Spa-Style Retreat', desc: 'Freestanding tubs, rainfall showers and natural stone create a five-star spa experience at home.', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80' },
-    { icon: '', title: 'Bright & Airy', desc: 'Maximise natural light with frameless glass, white tiles and minimal clutter for a fresh, open feel.', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=600&q=80' },
-    { icon: '', title: 'Dark & Dramatic', desc: 'Matte black fixtures, dark tiles and moody lighting for a bold, sophisticated bathroom statement.', image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80' },
-    { icon: '', title: 'Biophilic Design', desc: 'Plants, natural wood accents and earthy tones bring the outdoors in for a calming, organic bathroom.', image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80' },
-    { icon: '', title: 'Classic Marble', desc: 'Timeless Carrara or Calacatta marble surfaces paired with polished chrome for enduring elegance.', image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=600&q=80' },
-    { icon: '', title: 'Compact & Smart', desc: 'Space-saving wall-hung vanities, corner showers and clever storage for small but stylish bathrooms.', image: 'https://images.unsplash.com/photo-1620626011761-996317702519?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Spa-Style Retreat', 
+        desc: 'Freestanding tubs, rainfall showers and natural stone create a five-star spa experience at home.', 
+        image: spa
+    },
+    { 
+        icon: '', 
+        title: 'Bright & Airy', 
+        desc: 'Maximise natural light with frameless glass, white tiles and minimal clutter for a fresh, open feel.', 
+        image: bright
+    },
+    { 
+        icon: '', 
+        title: 'Dark & Dramatic', 
+        desc: 'Matte black fixtures, dark tiles and moody lighting for a bold, sophisticated bathroom statement.', 
+        image: dark
+    },
+    { 
+        icon: '', 
+        title: 'Biophilic Design', 
+        desc: 'Plants, natural wood accents and earthy tones bring the outdoors in for a calming, organic bathroom.', 
+        image: biophillic
+    },
+    { 
+        icon: '', 
+        title: 'Classic Marble', 
+        desc: 'Timeless Carrara or Calacatta marble surfaces paired with polished chrome for enduring elegance.', 
+        image: classic
+    },
+    { 
+        icon: '', 
+        title: 'Compact & Smart', 
+        desc: 'Space-saving wall-hung vanities, corner showers and clever storage for small but stylish bathrooms.', 
+        image: compact
+    },
 ];
 
 const faqs = [
@@ -96,7 +132,7 @@ const Bathroom = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1600&q=80" alt="Luxury Bathroom - Kryoss Interior" />
+                    <img src={classic}alt="Luxury Bathroom - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Spa-Style Master Bathroom â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +171,7 @@ const Bathroom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=900&q=80" alt="Master Bathroom" />
+                            <img src={spa} alt="Master Bathroom" />
                         </div>
                     </div>
 
@@ -156,7 +192,7 @@ const Bathroom = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1620626011761-996317702519?w=900&q=80" alt="Small Bathroom Design" />
+                            <img src={dark} alt="Small Bathroom Design" />
                         </div>
                     </div>
                 </section>

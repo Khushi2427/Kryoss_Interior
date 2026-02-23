@@ -2,14 +2,50 @@
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import homeOffice from '../../assets/design-gallery/home-office.jpg';
+import acsoutic from '../../assets/design-gallery/home/acsoutic.png';
+import biophilic from '../../assets/design-gallery/home/biophilic.png';
+import bookshelf from '../../assets/design-gallery/home/bookshelf.png';
+import executive from '../../assets/design-gallery/home/executive.png';
+import natural from '../../assets/design-gallery/home/natural.png';
+import task from '../../assets/design-gallery/home/task.png';
 
 const ideas = [
-    { icon: '', title: 'Executive Desk Setup', desc: 'A large L-shaped or executive desk with cable management and monitor arms for a professional, productive workspace.', image: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80' },
-    { icon: '', title: 'Built-In Bookshelves', desc: 'Floor-to-ceiling bookshelves add character, storage and a sense of gravitas to any home office.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { icon: '', title: 'Natural Light Focus', desc: 'Position your desk near a window to maximize natural light, boost mood and reduce eye strain during long work sessions.', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80' },
-    { icon: '', title: 'Acoustic Panels', desc: 'Fabric acoustic panels reduce echo and background noise for clearer video calls and better concentration.', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&q=80' },
-    { icon: '', title: 'Biophilic Elements', desc: 'Plants, natural materials and views of greenery reduce stress and improve focus in home office environments.', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80' },
-    { icon: '', title: 'Task Lighting', desc: 'A quality desk lamp with adjustable colour temperature reduces eye strain and keeps you alert throughout the day.', image: 'https://images.unsplash.com/photo-1513506003901-1e6a35f7a0b4?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Executive Desk Setup', 
+        desc: 'A large L-shaped or executive desk with cable management and monitor arms for a professional, productive workspace.', 
+        image: executive 
+    },
+    { 
+        icon: '', 
+        title: 'Built-In Bookshelves', 
+        desc: 'Floor-to-ceiling bookshelves add character, storage and a sense of gravitas to any home office.', 
+        image: bookshelf 
+    },
+    { 
+        icon: '', 
+        title: 'Natural Light Focus', 
+        desc: 'Position your desk near a window to maximize natural light, boost mood and reduce eye strain during long work sessions.', 
+        image: natural 
+    },
+    { 
+        icon: '', 
+        title: 'Acoustic Panels', 
+        desc: 'Fabric acoustic panels reduce echo and background noise for clearer video calls and better concentration.', 
+        image: acsoutic 
+    },
+    { 
+        icon: '', 
+        title: 'Biophilic Elements', 
+        desc: 'Plants, natural materials and views of greenery reduce stress and improve focus in home office environments.', 
+        image: biophilic 
+    },
+    { 
+        icon: '', 
+        title: 'Task Lighting', 
+        desc: 'A quality desk lamp with adjustable colour temperature reduces eye strain and keeps you alert throughout the day.', 
+        image: task 
+    },
 ];
 
 const faqs = [
@@ -96,7 +132,7 @@ const HomeOffice = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80" alt="Home Office - Kryoss Interior" />
+                    <img src={executive} alt="Home Office - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Executive Home Office Design â€¢ Kryoss Interior</div>
                 </div>
 
@@ -135,7 +171,7 @@ const HomeOffice = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=900&q=80" alt="Executive Home Office" />
+                            <img src={executive} alt="Executive Home Office" />
                         </div>
                     </div>
 
@@ -156,7 +192,7 @@ const HomeOffice = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=80" alt="Creative Studio Office" />
+                            <img src={biophilic} alt="Creative Studio Office" />
                         </div>
                     </div>
                 </section>
