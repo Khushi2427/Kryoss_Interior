@@ -1,15 +1,40 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
-
+import banner from '../../assets/guides/modular/banner.png';
+import efficiency from '../../assets/guides/modular/efficiency.png';
+import island2 from '../../assets/guides/modular/island2.png';
+import lshaped from '../../assets/guides/modular/lshaped.png';
+import parallel from '../../assets/guides/modular/parallel.png';
+import ushaped from '../../assets/guides/modular/ushaped.png';
 const ModularKitchen = () => {
   const [activeLayout, setActiveLayout] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
 
   const layouts = [
-    { title: "L-Shaped", icon: '', desc: "Ideal for compact homes. Efficient corner utilization.", img: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=900&q=80" },
-    { title: "U-Shaped", icon: '', desc: "Maximum storage and counter space. Great for serious cooks.", img: "https://images.unsplash.com/photo-1556911211-6d8f8d8c5b7e?w=900&q=80" },
-    { title: "Parallel", icon: '', desc: "Efficient galley layout. Minimal movement between zones.", img: "https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?w=900&q=80" },
-    { title: "Island", icon: '', desc: "For large open spaces. Adds social interaction and prep space.", img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900&q=80" }
+    { 
+      title: "L-Shaped", 
+      icon: '', 
+      desc: "Ideal for compact homes. Efficient corner utilization.", 
+      img: lshaped
+    },
+    { 
+      title: "U-Shaped", 
+      icon: '', 
+      desc: "Maximum storage and counter space. Great for serious cooks.", 
+      img: ushaped
+    },
+    { 
+      title: "Parallel", 
+      icon: '', 
+      desc: "Efficient galley layout. Minimal movement between zones.", 
+      img: parallel
+    },
+    { 
+      title: "Island", 
+      icon: '', 
+      desc: "For large open spaces. Adds social interaction and prep space.", 
+      img: island2
+    }
   ];
 
   const considerations = [
@@ -22,7 +47,7 @@ const ModularKitchen = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=1600&q=85" alt="Modular Kitchen" className="blog-hero__image" />
+        <img src={banner} alt="Modular Kitchen" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Modular Kitchen<br /><em>Design Guide</em></h1>
@@ -36,7 +61,7 @@ const ModularKitchen = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?w=900&q=80" alt="Kitchen Workflow" />
+              <img src={parallel} alt="Kitchen Workflow" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Heart of Home</div>
