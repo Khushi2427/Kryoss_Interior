@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
-import hero from '../../assets/home/hero.png';
+import hero from '../../assets/Home/hero.png';
 
 
 const ROOM_COSTS = {
