@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import careers from '../../assets/more/careers.png';
 import '../blogs/BlogArticle.css';
 import { Briefcase, UserPlus, Star, ChevronRight, PenTool, Layout, Phone, Settings } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const Careers = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+                    src={careers}
                     alt="Kryoss Interior Team"
                     className="blog-hero__image"
                 />

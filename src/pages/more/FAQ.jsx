@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar';
-
+import faq from '../../assets/more/faq.png';
 import '../blogs/BlogArticle.css';
 import { HelpCircle, DollarSign, Clock, PenTool } from 'lucide-react';
 
@@ -53,7 +53,7 @@ const FAQ = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80"
+                    src={faq}
                     alt="FAQ Discussion"
                     className="blog-hero__image"
                 />

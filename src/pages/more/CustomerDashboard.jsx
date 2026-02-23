@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import client from '../../assets/more/client.png';
 import '../blogs/BlogArticle.css';
 import { LayoutDashboard, BarChart2, MessageSquare, CheckCircle, ArrowRight, Lock } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const CustomerDashboard = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
+                    src={client}
                     alt="Customer Dashboard"
                     className="blog-hero__image"
                 />

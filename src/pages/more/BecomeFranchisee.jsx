@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import franchise from '../../assets/more/franchisepartner.png';
 import '../blogs/BlogArticle.css';
 import { Building, TrendingUp, Users, ShieldCheck, CheckSquare, ArrowRight, BarChart } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const BecomeFranchisee = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80"
+                    src={franchise}
                     alt="Franchise Opportunity"
                     className="blog-hero__image"
                 />

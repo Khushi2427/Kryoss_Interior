@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import about from '../../assets/more/about.png';
 import '../blogs/BlogArticle.css';
 import { Target, Users, Layout, ShieldCheck, Clock, Lightbulb, ArrowRight, Heart, Star } from 'lucide-react';
 
@@ -16,7 +16,7 @@ const AboutUs = () => {
             {/* Hero Section */}
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80"
+                    src={about}
                     alt="Kryoss Interior Design Studio"
                     className="blog-hero__image"
                 />

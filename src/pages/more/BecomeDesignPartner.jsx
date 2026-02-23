@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import designpartner  from '../../assets/more/designpartner.png';
 import '../blogs/BlogArticle.css';
 import { Share2, Briefcase, TrendingUp, Users, CheckCircle, Palette, ArrowRight } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const BecomeDesignPartner = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1628147366085-f8605d63f25c?auto=format&fit=crop&q=80"
+                    src={designpartner}
                     alt="Design Partner Collaboration"
                     className="blog-hero__image"
                 />

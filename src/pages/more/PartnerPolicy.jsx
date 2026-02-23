@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import partnerpolicy from '../../assets/more/partnerpolicy.png';
 import '../blogs/BlogArticle.css';
 import { Shield, FileText, Lock, AlertCircle, CheckCircle } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const PartnerPolicy = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80"
+                    src={partnerpolicy}
                     alt="Policy & Documents"
                     className="blog-hero__image"
                 />

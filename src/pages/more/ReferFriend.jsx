@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import refer from '../../assets/more/refer.png';
 import '../blogs/BlogArticle.css';
 import { Gift, Heart, Users, Star, CheckCircle, ArrowRight } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const ReferFriend = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80"
+                    src={refer}
                     alt="Referral Program"
                     className="blog-hero__image"
                 />

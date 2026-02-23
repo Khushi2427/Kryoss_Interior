@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import channel from '../../assets/more/channals.png';
 import '../blogs/BlogArticle.css';
 import { UserCheck, PieChart, MessageCircle, DollarSign, Handshake, Users, ArrowRight } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const ChannelProgram = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&q=80"
+                    src={channel}
                     alt="Channel Partner Collaboration"
                     className="blog-hero__image"
                 />
