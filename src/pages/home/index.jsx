@@ -7,19 +7,19 @@ import { ArrowRight, Star, PlayCircle, Calculator, ChevronRight, UserCheck, Shie
 import '../../components/Features.css';
 import '../blogs/BlogArticle.css';
 import './Home.css';
-import hero from '../../assets/home/hero.png';
-import bedroom from '../../assets/home/bedroom.png';
-import contemporary from '../../assets/home/contemporary.png';
-import full from '../../assets/home/full.png';
-import living from '../../assets/home/living.png';
-import luxury from '../../assets/home/luxury.png';
-import modern from '../../assets/home/modern.png';
-import modular from '../../assets/home/modular.png';
-import plan from '../../assets/home/plan.png';
-import wardrobe from '../../assets/home/wardrobe.png';
-import project1 from '../../assets/home/project1.png';
-import project2 from '../../assets/home/project2.png';
-import project3 from '../../assets/home/project3.png';
+import hero from '../../assets/Home/hero.png';
+import bedroom from '../../assets/Home/bedroom.png';
+import contemporary from '../../assets/Home/contemporary.png';
+import full from '../../assets/Home/full.png';
+import living from '../../assets/Home/living.png';
+import luxury from '../../assets/Home/luxury.png';
+import modern from '../../assets/Home/modern.png';
+import modular from '../../assets/Home/modular.png';
+import plan from '../../assets/Home/plan.png';
+import wardrobe from '../../assets/Home/wardrobe.png';
+import project1 from '../../assets/Home/project1.png';
+import project2 from '../../assets/Home/project2.png';
+import project3 from '../../assets/Home/project3.png';
 
 const Home = () => {
 
