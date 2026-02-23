@@ -2,28 +2,31 @@ import React from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { MapPin, Phone, Navigation } from 'lucide-react';
 import '../blogs/BlogArticle.css';
-
+import banner from '../../assets/experience/banner.png';
+import gurgoan from '../../assets/experience/gurgoan.png';
+import ouroffice from '../../assets/experience/ouroffice.png';
+import pune from '../../assets/experience/pune.png';
 const centers = [
     {
         city: 'Gurgaon',
         name: 'JMD Megapolis',
         address: '1102, 11th Floor, JMD Megapolis, Sec-48, Gurgaon-122018, Haryana, India',
         phone: '+0124-4001495',
-        map: 'https://www.google.com/maps/search/?api=1&query=JMD+Megapolis+Sec-48+Gurgaon'
+        map: gurgoan
     },
     {
         city: 'Gurgaon',
         name: 'Spaze IT Park',
         address: '348-352, Spaze IT Park, Sec-48, Gurgaon-122018, Haryana, India',
         phone: '+0124-4001298',
-        map: 'https://www.google.com/maps/search/?api=1&query=Spaze+IT+Park+Sec-48+Gurgaon'
+        map: ouroffice
     },
     {
         city: 'Pune',
         name: 'Pune IT Park',
         address: 'C-601, Pune IT Park, 34 Aundh Road, Bhau Patil Marg, Pune - 411020, Maharashtra, India',
         phone: '+91-020-411208',
-        map: 'https://www.google.com/maps/search/?api=1&query=Pune+IT+Park+Bhau+Patil+Marg+Pune'
+        map: pune
     },
 ];
 
@@ -38,7 +41,7 @@ const ExperienceCenters = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85" alt="Experience Centres" className="blog-hero__image" />
+                <img src={banner} alt="Experience Centres" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
                         <h1 className="blog-hero__title">Our <br /><em>Offices</em></h1>
@@ -106,9 +109,9 @@ const ExperienceCenters = () => {
 
                                 <div className="center-image" style={{ flex: '1 1 500px', height: '400px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
                                     <img
-                                        src={i === 0 ? "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" :
-                                            i === 1 ? "https://images.unsplash.com/photo-1577412647305-991150c7d163?w=800&q=80" :
-                                                "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80"}
+                                        src={i === 0 ? ouroffice :
+                                            i === 1 ? gurgoan :
+                                            pune}
                                         alt={`${center.city} Office`}
                                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                                     />
