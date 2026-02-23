@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
 import hero from '../../assets/Home/hero.png';
+import home from '../../assets/calculators/home.png';
+import home2 from '../../assets/calculators/home2.png';
 
 
 const ROOM_COSTS = {
@@ -57,7 +59,7 @@ const HomeCalculator = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800&q=80" alt="Cost Calculator" className="blog-hero__image" />
+        <img src={home} alt="Cost Calculator" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Estimate Your <em>Dream Home</em></h1>
@@ -168,7 +170,7 @@ const HomeCalculator = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '400px' }}>
-              <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=80" alt="Interior Plan" />
+              <img src={home2} alt="Interior Plan" />
             </div>
           </div>
         </section>

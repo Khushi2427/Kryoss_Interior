@@ -1,14 +1,52 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import home from '../../assets/offerings/home.png';
+import completehome from '../../assets/offerings/completehome.png';
+import balcony from '../../assets/offerings/balcony.png';
+import bathroom from '../../assets/offerings/bathroom.png';
+import bedroom from '../../assets/offerings/bedroom.png';
+import dining from '../../assets/offerings/dining.png';
+import living from '../../assets/offerings/living.png';
+import modular from '../../assets/offerings/modular.png';
 
 const rooms = [
-    { icon: '', title: 'Living Room', desc: 'Statement sofas, custom TV units, layered lighting and curated decor that make your living room the heart of the home.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Bedroom', desc: 'Serene master suites and functional kids rooms designed for rest, comfort and personal expression.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
-    { icon: '', title: 'Modular Kitchen', desc: 'Precision-engineered kitchens with smart storage, premium finishes and appliance integration.', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&q=80' },
-    { icon: '', title: 'Bathroom', desc: 'Spa-inspired bathrooms with premium fixtures, elegant tiling and thoughtful storage solutions.', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80' },
-    { icon: '', title: 'Dining Room', desc: 'Elegant dining spaces with statement lighting, custom furniture and the perfect ambience for every meal.', image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80' },
-    { icon: '', title: 'Balcony & Foyer', desc: 'First impressions and outdoor extensions - designed to welcome and delight at every turn.', image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Living Room', 
+        desc: 'Statement sofas, custom TV units, layered lighting and curated decor that make your living room the heart of the home.', 
+        image: living
+    },
+    { 
+        icon: '', 
+        title: 'Bedroom', 
+        desc: 'Serene master suites and functional kids rooms designed for rest, comfort and personal expression.', 
+        image: bedroom
+    },
+    { 
+        icon: '', 
+        title: 'Modular Kitchen', 
+        desc: 'Precision-engineered kitchens with smart storage, premium finishes and appliance integration.', 
+        image: modular
+    },
+    { 
+        icon: '', 
+        title: 'Bathroom', 
+        desc: 'Spa-inspired bathrooms with premium fixtures, elegant tiling and thoughtful storage solutions.', 
+        image: bathroom
+    },
+    { 
+        icon: '', 
+        title: 'Dining Room', 
+        desc: 'Elegant dining spaces with statement lighting, custom furniture and the perfect ambience for every meal.', 
+        image: dining
+    },
+    { 
+        icon: '', 
+        title: 'Balcony & Foyer', 
+        desc: 'First impressions and outdoor extensions - designed to welcome and delight at every turn.', 
+        image: balcony
+    },
 ];
 
 const faqs = [
@@ -48,7 +86,7 @@ const FullHome = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1800&q=80" alt="Full Home Interiors" className="blog-hero__image" />
+                <img src={home} alt="Full Home Interiors" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
 
@@ -96,7 +134,7 @@ const FullHome = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80" alt="Full Home Interior - Kryoss Interior" />
+                    <img src={completehome} alt="Full Home Interior - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Complete Home Interior Design • Kryoss Interior</div>
                 </div>
 
@@ -135,7 +173,7 @@ const FullHome = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900&q=80" alt="Full Home Design" />
+                            <img src={completehome} alt="Full Home Design" />
                         </div>
                     </div>
                 </section>

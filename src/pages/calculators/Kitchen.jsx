@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import hero from '../../assets/design-gallery/customise-kitchen.jpg';
+import kitchen from '../../assets/calculators/kitchen.png';
 
 const LAYOUT_BASE = {
   straight: { label: "Straight", sqft: 8, icon: '', desc: "Compact & efficient" },
@@ -83,7 +85,7 @@ export default function KitchenCalculator() {
     <div className="blog-page">
       {/* HERO */}
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1800&q=80" alt="Kitchen Calculator" className="blog-hero__image" />
+        <img src={hero} alt="Kitchen Calculator" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Design Smart.<br /><em>Budget Right.</em></h1>
@@ -215,7 +217,7 @@ export default function KitchenCalculator() {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '400px' }}>
-              <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=900&q=80" alt="Kitchen Planning" />
+              <img src={kitchen} alt="Kitchen Planning" />
             </div>
           </div>
         </section>

@@ -1,14 +1,53 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import banner from '../../assets/offerings/wardrobes/banner.png';
+import custom from '../../assets/offerings/wardrobes/custom.png';
+import hinged from '../../assets/offerings/wardrobes/hinged.png';
+import modular from '../../assets/offerings/wardrobes/modular.png';
+import open from '../../assets/offerings/wardrobes/open.png';
+import sliding from '../../assets/offerings/wardrobes/sliding.png';
+import smart from '../../assets/offerings/wardrobes/smart.png';
+import walkin from '../../assets/offerings/wardrobes/walkin.png';
+import walkin2 from '../../assets/offerings/wardrobes/walkin2.png';
 
 const types = [
-    { icon: '', title: 'Sliding Wardrobes', desc: 'Space-efficient sliding door wardrobes with mirrored panels, soft-close mechanisms and fully customizable interiors.', image: 'https://images.unsplash.com/photo-1616594891894-f17042593bb2?w=600&q=80' },
-    { icon: '', title: 'Walk-In Wardrobes', desc: 'Luxurious walk-in dressing rooms with island units, full-length mirrors and dedicated sections for every clothing type.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-    { icon: '', title: 'Hinged Door Wardrobes', desc: 'Classic hinged door wardrobes that provide full access to the entire wardrobe at once - ideal for larger rooms.', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80' },
-    { icon: '', title: 'Modular Systems', desc: 'Flexible modular wardrobe systems that can be reconfigured as your storage needs change over time.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-    { icon: '', title: 'Open Wardrobes', desc: 'Boutique-style open wardrobe systems with display rails and shelves for a curated clothing presentation.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-    { icon: '', title: 'Custom Designs', desc: 'Fully bespoke wardrobe designs tailored to your exact space, storage needs and aesthetic preferences.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
+    { 
+        icon: '', 
+        title: 'Sliding Wardrobes', 
+        desc: 'Space-efficient sliding door wardrobes with mirrored panels, soft-close mechanisms and fully customizable interiors.', 
+        image: sliding
+    },
+    { 
+        icon: '', 
+        title: 'Walk-In Wardrobes', 
+        desc: 'Luxurious walk-in dressing rooms with island units, full-length mirrors and dedicated sections for every clothing type.', 
+        image: walkin
+    },
+    { 
+        icon: '', 
+        title: 'Hinged Door Wardrobes', 
+        desc: 'Classic hinged door wardrobes that provide full access to the entire wardrobe at once - ideal for larger rooms.', 
+        image: hinged
+    },
+    { 
+        icon: '', 
+        title: 'Modular Systems', 
+        desc: 'Flexible modular wardrobe systems that can be reconfigured as your storage needs change over time.', 
+        image: modular
+    },
+    { 
+        icon: '', 
+        title: 'Open Wardrobes', 
+        desc: 'Boutique-style open wardrobe systems with display rails and shelves for a curated clothing presentation.', 
+        image: open
+    },
+    { 
+        icon: '', 
+        title: 'Custom Designs', 
+        desc: 'Fully bespoke wardrobe designs tailored to your exact space, storage needs and aesthetic preferences.', 
+        image: custom
+    },
 ];
 
 const faqs = [
@@ -48,7 +87,7 @@ const Wardrobes = () => {
     return (
         <div className="blog-page">
             <div className="blog-hero">
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80" alt="Wardrobes" className="blog-hero__image" />
+                <img src={banner} alt="Wardrobes" className="blog-hero__image" />
                 <div className="blog-hero__overlay">
                     <div className="blog-hero__content">
 
@@ -96,7 +135,7 @@ const Wardrobes = () => {
                 </section>
 
                 <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Custom Wardrobe - Kryoss Interior" />
+                    <img src={custom} alt="Custom Wardrobe - Kryoss Interior" />
                     <div className="blog-wide-image__caption">Walk-In Wardrobe Design • Kryoss Interior</div>
                 </div>
 
@@ -135,7 +174,7 @@ const Wardrobes = () => {
                             </div>
                         </div>
                         <div className="blog-image-wrap" style={{ height: '480px' }}>
-                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=900&q=80" alt="Wardrobe Interior" />
+                            <img src={walkin2} alt="Wardrobe Interior" />
                         </div>
                     </div>
                 </section>

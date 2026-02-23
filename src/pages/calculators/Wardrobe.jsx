@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import '../blogs/BlogArticle.css';
+import hero from '../../assets/design-gallery/wardrobes-design.jpg';
+import wardrobe1 from '../../assets/calculators/wardrobe1.png';
 
 const WARDROBE_TYPE = {
   sliding: { label: "Sliding", icon: '', desc: "Space-saving, sleek", baseCost: 1800 },
@@ -96,7 +98,7 @@ export default function WardrobeCalculator() {
     <div className="blog-page">
       {/* HERO */}
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1595514020173-66b6e3a6a95e?w=1800&q=80" alt="Wardrobe Calculator" className="blog-hero__image" />
+        <img src={hero} alt="Wardrobe Calculator" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Organise Better.<br /><em>Live Clutter-Free.</em></h1>
@@ -236,7 +238,7 @@ export default function WardrobeCalculator() {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '400px' }}>
-              <img src="https://images.unsplash.com/photo-1556020685-ae41abfc9365?w=900&q=80" alt="Wardrobe Detail" />
+              <img src={wardrobe1} alt="Wardrobe Detail" />
             </div>
           </div>
         </section>
