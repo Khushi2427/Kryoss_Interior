@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
+import whykryoss from '../../assets/more/whykryoss.png';
 
 import '../blogs/BlogArticle.css';
 import { Home, Layout, ShieldCheck, Clock, Smile, Heart, CheckSquare } from 'lucide-react';
@@ -15,7 +16,7 @@ const WhyKryoss = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&q=80"
+                    src={whykryoss}
                     alt="Comfortable Living"
                     className="blog-hero__image"
                 />

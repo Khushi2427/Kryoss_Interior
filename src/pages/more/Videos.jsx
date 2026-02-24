@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-
+import videos from '../../assets/more/videos.png';
 import '../blogs/BlogArticle.css';
 import { PlayCircle, Film } from 'lucide-react';
 
@@ -15,7 +15,7 @@ const Videos = () => {
 
             <div className="blog-hero">
                 <img
-                    src="https://images.unsplash.com/photo-1574352067721-72d5913bd35c?auto=format&fit=crop&q=80"
+                    src={videos}
                     alt="Interior Videos"
                     className="blog-hero__image"
                 />
