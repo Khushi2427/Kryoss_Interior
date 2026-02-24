@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Sun, Dock, SlidersHorizontal, FlipHorizontal2 } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import bathBanner from '../../assets/guides/Bathroom banner.jpg';
 import bathCareful from '../../assets/guides/Bathrooms need the careful planning.jpg';
@@ -58,10 +59,10 @@ const Bathroom = () => {
   ];
 
   const smallSpaceTips = [
-    { tip: "Light-coloured tiles", detail: "Pale tones reflect light and visually expand the room.", icon: '' },
-    { tip: "Wall-mounted fixtures", detail: "Free up floor space and make mopping effortless.", icon: '' },
-    { tip: "Sliding shower partitions", detail: "Eliminate swing clearance needed by hinged doors.", icon: '' },
-    { tip: "Mirrors for visual depth", detail: "Strategically placed mirrors double the perceived space.", icon: '' },
+    { title: "Light-coloured tiles", desc: "Pale tones reflect light and visually expand the room.", icon: <Sun size={28} color="#fff" /> },
+    { title: "Wall-mounted fixtures", desc: "Free up floor space and make mopping effortless.", icon: <Dock size={28} color="#fff" /> },
+    { title: "Sliding shower partitions", desc: "Eliminate swing clearance needed by hinged doors.", icon: <SlidersHorizontal size={28} color="#fff" /> },
+    { title: "Mirrors for visual depth", desc: "Strategically placed mirrors double the perceived space.", icon: <FlipHorizontal2 size={28} color="#fff" /> },
   ];
 
   return (
@@ -148,12 +149,18 @@ const Bathroom = () => {
         {/* ── SMALL SPACE TIPS ────────────────────────────────────── */}
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Small Space <em>Solutions</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {smallSpaceTips.map((tip, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon">{tip.icon}</div>
-                <h3 className="blog-feature-title">{tip.tip}</h3>
-                <p className="blog-feature-desc">{tip.detail}</p>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {tip.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{tip.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{tip.desc}</p>
               </div>
             ))}
           </div>

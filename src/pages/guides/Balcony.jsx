@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Sprout, FoldVertical, PackageOpen, Layers } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import bannerBalcony from '../../assets/guides/banner-Balcony.jpg';
 import extendSpace from '../../assets/guides/Extend-your-living-space.jpg';
@@ -56,10 +57,10 @@ const Balcony = () => {
   ];
 
   const tips = [
-    { tip: "Vertical Gardening", detail: "Save floor space by using walls for plants.", icon: '' },
-    { tip: "Foldable Tables", detail: "Rail-mounted tables are perfect for morning coffee.", icon: '' },
-    { tip: "Multi-use Storage", detail: "Bench seating with hidden storage for cushions.", icon: '' },
-    { tip: "Rug Layering", detail: "Outdoor rugs define the seating area and add warmth.", icon: '' },
+    { title: "Vertical Gardening", desc: "Save floor space by using walls for plants.", icon: <Sprout size={28} color="#fff" /> },
+    { title: "Foldable Tables", desc: "Rail-mounted tables are perfect for morning coffee.", icon: <FoldVertical size={28} color="#fff" /> },
+    { title: "Multi-use Storage", desc: "Bench seating with hidden storage for cushions.", icon: <PackageOpen size={28} color="#fff" /> },
+    { title: "Rug Layering", desc: "Outdoor rugs define the seating area and add warmth.", icon: <Layers size={28} color="#fff" /> },
   ];
 
   return (
@@ -140,12 +141,18 @@ const Balcony = () => {
 
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Compact <em style={{ color: '#fff' }}>Ideas</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {tips.map((tip, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon">{tip.icon}</div>
-                <h3 className="blog-feature-title">{tip.tip}</h3>
-                <p className="blog-feature-desc">{tip.detail}</p>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {tip.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{tip.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{tip.desc}</p>
               </div>
             ))}
           </div>

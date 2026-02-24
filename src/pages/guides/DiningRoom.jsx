@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Circle, Armchair, FlipHorizontal2, ArrowUpFromLine } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import diningRoom from '../../assets/guides/Dining-Room.jpg';
 import lifeHappensTog from '../../assets/guides/Where life happens together.jpg';
@@ -10,7 +11,7 @@ import comfortableSetting from '../../assets/guides/Comfortable Seating.jpg';
 
 
 
-Dining-Room
+
 const DiningRoom = () => {
   const [activeElement, setActiveElement] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
@@ -24,10 +25,10 @@ const DiningRoom = () => {
   ];
 
   const smallRoomTips = [
-    { tip: "Round Tables", detail: "No corners mean more flow and flexibility.", icon: '' },
-    { tip: "Bench Seating", detail: "Tucks under the table or sits against a wall to save space.", icon: '' },
-    { tip: "Mirrors", detail: "Reflect light and make the dining nook feel larger.", icon: '' },
-    { tip: "Vertical Storage", detail: "Tall, slim cabinets instead of wide sideboards.", icon: '' }
+    { title: "Round Tables", desc: "No corners mean more flow and flexibility.", icon: <Circle size={28} color="#fff" /> },
+    { title: "Bench Seating", desc: "Tucks under the table or sits against a wall to save space.", icon: <Armchair size={28} color="#fff" /> },
+    { title: "Mirrors", desc: "Reflect light and make the dining nook feel larger.", icon: <FlipHorizontal2 size={28} color="#fff" /> },
+    { title: "Vertical Storage", desc: "Tall, slim cabinets instead of wide sideboards.", icon: <ArrowUpFromLine size={28} color="#fff" /> }
   ];
 
   return (
@@ -98,12 +99,18 @@ const DiningRoom = () => {
 
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Small Space <em style={{ color: '#fff' }}>Solutions</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {smallRoomTips.map((t, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon">{t.icon}</div>
-                <h3 className="blog-feature-title">{t.tip}</h3>
-                <p className="blog-feature-desc">{t.detail}</p>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {t.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{t.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{t.desc}</p>
               </div>
             ))}
           </div>

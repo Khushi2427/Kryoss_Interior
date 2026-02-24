@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Layers, Triangle, Archive, Lightbulb } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import banner from '../../assets/guides/modular/banner.png';
 import efficiency from '../../assets/guides/modular/efficiency.png';
@@ -11,37 +12,37 @@ const ModularKitchen = () => {
   const [activeFaq, setActiveFaq] = useState(null);
 
   const layouts = [
-    { 
-      title: "L-Shaped", 
-      icon: '', 
-      desc: "Ideal for compact homes. Efficient corner utilization.", 
+    {
+      title: "L-Shaped",
+      icon: '',
+      desc: "Ideal for compact homes. Efficient corner utilization.",
       img: lshaped
     },
-    { 
-      title: "U-Shaped", 
-      icon: '', 
-      desc: "Maximum storage and counter space. Great for serious cooks.", 
+    {
+      title: "U-Shaped",
+      icon: '',
+      desc: "Maximum storage and counter space. Great for serious cooks.",
       img: ushaped
     },
-    { 
-      title: "Parallel", 
-      icon: '', 
-      desc: "Efficient galley layout. Minimal movement between zones.", 
+    {
+      title: "Parallel",
+      icon: '',
+      desc: "Efficient galley layout. Minimal movement between zones.",
       img: parallel
     },
-    { 
-      title: "Island", 
-      icon: '', 
-      desc: "For large open spaces. Adds social interaction and prep space.", 
+    {
+      title: "Island",
+      icon: '',
+      desc: "For large open spaces. Adds social interaction and prep space.",
       img: island2
     }
   ];
 
   const considerations = [
-    { title: "Material", desc: "BWP Plywood for wet areas, MDF for dry areas. Acrylic or Laminate finishes.", icon: '' },
-    { title: "Work Triangle", desc: "Sink, Stove, and Fridge should form an efficient triangle.", icon: '' },
-    { title: "Storage", desc: "Pull-outs, tall units, and corner carousels maximize space.", icon: '' },
-    { title: "Lighting", desc: "Under-cabinet profile lights are essential for work areas.", icon: '' }
+    { title: "Material", desc: "BWP Plywood for wet areas, MDF for dry areas. Acrylic or Laminate finishes.", icon: <Layers size={28} color="#fff" /> },
+    { title: "Work Triangle", desc: "Sink, Stove, and Fridge should form an efficient triangle.", icon: <Triangle size={28} color="#fff" /> },
+    { title: "Storage", desc: "Pull-outs, tall units, and corner carousels maximize space.", icon: <Archive size={28} color="#fff" /> },
+    { title: "Lighting", desc: "Under-cabinet profile lights are essential for work areas.", icon: <Lightbulb size={28} color="#fff" /> }
   ];
 
   return (
@@ -119,12 +120,18 @@ const ModularKitchen = () => {
 
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Key <em style={{ color: '#fff' }}>Considerations</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {considerations.map((c, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon">{c.icon}</div>
-                <h3 className="blog-feature-title">{c.title}</h3>
-                <p className="blog-feature-desc">{c.desc}</p>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {c.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{c.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{c.desc}</p>
               </div>
             ))}
           </div>

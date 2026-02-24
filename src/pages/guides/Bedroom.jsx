@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BedDouble, DoorOpen, Lightbulb, Palette, Blinds, Footprints } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import bedroom from '../../assets/guides/Bedroom.jpg';
 import personalRetreat from '../../assets/guides/personal retreat.jpeg';
@@ -12,12 +13,12 @@ const Bedroom = () => {
   const [activeFaq, setActiveFaq] = useState(null);
 
   const considerations = [
-    { title: "Bed Placement", icon: '', desc: "Centre it on the wall opposite the entrance. Leave 24 inches clearance on sides." },
-    { title: "Wardrobe Planning", icon: '', desc: "Plan door swing clearance. Standard depth is 24 inches for hanging space." },
-    { title: "Lighting Layers", icon: '', desc: "Combine ambient (ceiling), task (reading), and accent (mood) lighting." },
-    { title: "Colour Palette", icon: '', desc: "Calming neutrals or warm tones. Avoid overly bright, stimulating colours." },
-    { title: "Window Treatments", icon: '', desc: "Blackout curtains for sleep, sheer for privacy during the day." },
-    { title: "Flooring & Rugs", icon: '', desc: "Warm wood or carpet. Rugs should extend beyond the bed for warmth." }
+    { title: "Bed Placement", icon: <BedDouble size={28} color="#fff" />, desc: "Centre it on the wall opposite the entrance. Leave 24 inches clearance on sides." },
+    { title: "Wardrobe Planning", icon: <DoorOpen size={28} color="#fff" />, desc: "Plan door swing clearance. Standard depth is 24 inches for hanging space." },
+    { title: "Lighting Layers", icon: <Lightbulb size={28} color="#fff" />, desc: "Combine ambient (ceiling), task (reading), and accent (mood) lighting." },
+    { title: "Colour Palette", icon: <Palette size={28} color="#fff" />, desc: "Calming neutrals or warm tones. Avoid overly bright, stimulating colours." },
+    { title: "Window Treatments", icon: <Blinds size={28} color="#fff" />, desc: "Blackout curtains for sleep, sheer for privacy during the day." },
+    { title: "Flooring & Rugs", icon: <Footprints size={28} color="#fff" />, desc: "Warm wood or carpet. Rugs should extend beyond the bed for warmth." }
   ];
 
   const ideas = [
@@ -81,12 +82,18 @@ const Bedroom = () => {
 
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Key <em style={{ color: '#fff' }}>Considerations</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {considerations.map((item, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon">{item.icon}</div>
-                <h3 className="blog-feature-title">{item.title}</h3>
-                <p className="blog-feature-desc">{item.desc}</p>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {item.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{item.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{item.desc}</p>
               </div>
             ))}
           </div>

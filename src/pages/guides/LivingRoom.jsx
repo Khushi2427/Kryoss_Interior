@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Maximize, LampDesk, Focus, PackageOpen } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import banner from '../../assets/guides/Living-Room-banner.jpg';
 import comfSeating from '../../assets/guides/Comfortable Seating.jpeg';
@@ -22,10 +23,10 @@ const LivingRoom = () => {
   ];
 
   const mistakes = [
-    { title: "Oversized Furniture", desc: "Blocks flow and makes room feel small.", fix: "Measure first" },
-    { title: "Poor Lighting", desc: "Single overhead light kills mood.", fix: "Layer light" },
-    { title: "No Focal Point", desc: "Eye wanders without anchor.", fix: "Feature wall/TV" },
-    { title: "Ignoring Storage", desc: "Clutter builds up fast.", fix: "Plan cabinets" }
+    { title: "Oversized Furniture", desc: "Blocks flow and makes room feel small.", icon: <Maximize size={28} color="#fff" />, fix: "Measure first" },
+    { title: "Poor Lighting", desc: "Single overhead light kills mood.", icon: <LampDesk size={28} color="#fff" />, fix: "Layer light" },
+    { title: "No Focal Point", desc: "Eye wanders without anchor.", icon: <Focus size={28} color="#fff" />, fix: "Feature wall/TV" },
+    { title: "Ignoring Storage", desc: "Clutter builds up fast.", icon: <PackageOpen size={28} color="#fff" />, fix: "Plan cabinets" }
   ];
 
   return (
@@ -96,13 +97,19 @@ const LivingRoom = () => {
 
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Avoid These <em style={{ color: '#fff' }}>Mistakes</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {mistakes.map((m, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon" style={{ borderColor: 'var(--kr-red)', color: 'var(--kr-red)' }}></div>
-                <h3 className="blog-feature-title">{m.title}</h3>
-                <p className="blog-feature-desc" style={{ marginBottom: '1rem' }}>{m.desc}</p>
-                <div style={{ color: 'var(--kr-red)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600 }}>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {m.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{m.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{m.desc}</p>
+                <div style={{ color: 'var(--kr-red)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '1px', fontWeight: 600, marginTop: '1rem' }}>
                   Fix: {m.fix}
                 </div>
               </div>

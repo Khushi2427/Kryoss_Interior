@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ShieldCheck, LayoutGrid, BookOpen, Archive, Palette } from 'lucide-react';
 import '../blogs/BlogArticle.css';
 import kidsBedroomGuide from '../../assets/guides/Kids-Room-Design-Guide.jpg';
 import designGrows from '../../assets/guides/Design-that-grows.jpg';
@@ -11,11 +12,11 @@ const KidsRoom = () => {
   const [activeFaq, setActiveFaq] = useState(null);
 
   const keyElements = [
-    { title: "Safe Furniture", icon: '', desc: "Rounded edges, stable structures, non-toxic materials. Safety first.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" },
-    { title: "Flexible Layout", icon: '', desc: "Adjustable desks and modular units prevent costly renovations as the child grows.", img: "https://images.unsplash.com/photo-1536349788264-1b816db3cc13?w=900&q=80" },
-    { title: "Study Zone", icon: '', desc: "A clear study area builds focus. Separate play and study zones for better balance.", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80" },
-    { title: "Smart Storage", icon: '', desc: "Toy boxes, open shelves, and under-bed drawers keep the room clutter-free.", img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" },
-    { title: "Balanced Colour", icon: '', desc: "Neutral base with playful accents. Easy-to-update wall elements allow evolution.", img: "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?w=900&q=80" }
+    { title: "Safe Furniture", icon: <ShieldCheck size={28} color="#fff" />, desc: "Rounded edges, stable structures, non-toxic materials. Safety first.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" },
+    { title: "Flexible Layout", icon: <LayoutGrid size={28} color="#fff" />, desc: "Adjustable desks and modular units prevent costly renovations as the child grows.", img: "https://images.unsplash.com/photo-1536349788264-1b816db3cc13?w=900&q=80" },
+    { title: "Study Zone", icon: <BookOpen size={28} color="#fff" />, desc: "A clear study area builds focus. Separate play and study zones for better balance.", img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&q=80" },
+    { title: "Smart Storage", icon: <Archive size={28} color="#fff" />, desc: "Toy boxes, open shelves, and under-bed drawers keep the room clutter-free.", img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80" },
+    { title: "Balanced Colour", icon: <Palette size={28} color="#fff" />, desc: "Neutral base with playful accents. Easy-to-update wall elements allow evolution.", img: "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?w=900&q=80" }
   ];
 
   const ageGroups = [
@@ -115,12 +116,18 @@ const KidsRoom = () => {
 
         <section style={{ marginBottom: '6rem' }}>
           <h2 className="blog-section-title">Key <em style={{ color: '#fff' }}>Elements</em></h2>
-          <div className="blog-feature-grid">
+          <div className="grid grid-3" style={{ gap: '2rem' }}>
             {keyElements.map((el, i) => (
-              <div key={i} className="blog-feature-card">
-                <div className="blog-feature-icon">{el.icon}</div>
-                <h3 className="blog-feature-title">{el.title}</h3>
-                <p className="blog-feature-desc">{el.desc}</p>
+              <div key={i} className="blog-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left', minHeight: '100%', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div style={{
+                  width: '60px', height: '60px', background: 'var(--kr-red)', borderRadius: '16px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem',
+                  boxShadow: '0 10px 20px -5px rgba(196, 30, 58, 0.3)'
+                }}>
+                  {el.icon}
+                </div>
+                <h3 className="blog-card__title" style={{ fontSize: '1.25rem', marginBottom: '0.75rem' }}>{el.title}</h3>
+                <p style={{ fontSize: '0.95rem', color: 'var(--kr-slate-3)', lineHeight: '1.6', flex: 1 }}>{el.desc}</p>
               </div>
             ))}
           </div>
