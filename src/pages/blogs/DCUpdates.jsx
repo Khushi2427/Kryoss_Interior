@@ -2,34 +2,38 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import dcUpdates from '../../assets/blogs/DC Updates.jpg';
+import hydrabad from '../../assets/blogs/dcupdates/hydrabad.jpg';
+import bangelore from '../../assets/blogs/dcupdates/bangelore.jpg';
+import south from '../../assets/blogs/dcupdates/south.jpg';
+import european from '../../assets/blogs/dcupdates/european.jpg';
 const updates = [
   {
     date: 'January 2026',
     tag: 'Launch',
     title: 'Kryoss Interior Launches Premium Design Studio in Bangalore',
     desc: 'We are thrilled to announce the opening of our flagship design studio in Koramangala, Bangalore - a 3,000 sq ft space showcasing our full range of modular furniture, material samples, and design concepts.',
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80',
+    image: bangelore,
   },
   {
     date: 'December 2025',
     tag: 'Award',
     title: 'Kryoss Interior Wins Best Interior Design Firm - South India 2025',
     desc: 'We are honoured to have been recognized as the Best Interior Design Firm in South India at the prestigious Design Excellence Awards 2025, celebrating our commitment to quality and innovation.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=900&q=80',
+    image: south,
   },
   {
     date: 'November 2025',
     tag: 'Expansion',
     title: 'Expanding to Hyderabad - New Design Centre Opening',
     desc: 'Kryoss Interior is expanding its footprint to Hyderabad with a new design centre in Jubilee Hills. The centre will serve the growing demand for premium interior design services in the city.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80',
+    image: hydrabad,
   },
   {
     date: 'October 2025',
     tag: 'Partnership',
     title: 'Strategic Partnership with Leading European Furniture Brands',
     desc: 'We have partnered with three leading European furniture manufacturers to bring exclusive, premium furniture collections to our clients - offering access to designs not previously available in India.',
-    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80',
+    image: european,
   },
 ];
 

@@ -2,13 +2,61 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import kidsBedroom from '../../assets/blogs/Kids Bedroom.jpg';
+import childsafe from '../../assets/blogs/kids/6 semi images/childsafe.jpg';
+
+
+import dedicatedStudyZone from '../../assets/blogs/kids/6 semi images/Dedicated Study Zone.jpg';
+
+import smartToyStorage from '../../assets/blogs/kids/6 semi images/Smart Toy Storage.jpg';
+
+import spaceSavingBunkBeds from '../../assets/blogs/kids/6 semi images/Space-Saving Bunk Beds.jpg';
+
+import themeBasedDesigns from '../../assets/blogs/kids/6 semi images/Theme-Based Designs.jpg';
+
+import vibrantColourThemes from '../../assets/blogs/kids/6 semi images/Vibrant Colour Themes.jpg';
+
+import coolSpacesForTeenagers from '../../assets/blogs/kids/Cool Spaces for Teenagers.jpg';
+
+
+import playfulSpaces from '../../assets/blogs/kids/Playful Spaces for Little Ones.jpg';
+
 const kidsIdeas = [
-  { icon: '', title: 'Vibrant Colour Themes', desc: 'Bold, cheerful colours stimulate creativity and make the room feel fun and inviting for children of all ages.', image: 'https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=600&q=80' },
-  { icon: '', title: 'Space-Saving Bunk Beds', desc: 'Bunk beds with built-in storage, desks, and play areas maximize floor space in shared or compact bedrooms.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { icon: '', title: 'Dedicated Study Zone', desc: 'A well-lit, ergonomic study area with ample storage for books and supplies supports learning and focus.', image: 'https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=600&q=80' },
-  { icon: '', title: 'Smart Toy Storage', desc: 'Built-in cubbies, colourful bins, and low shelves make it easy for children to organize and access their toys.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-  { icon: '', title: 'Theme-Based Designs', desc: 'From space adventures to enchanted forests, themed bedrooms spark imagination and make bedtime exciting.', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
-  { icon: '', title: 'Child-Safe Materials', desc: 'Non-toxic paints, rounded furniture edges, and anti-tip fixtures ensure a safe environment for active children.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
+  {
+    icon: '',
+    title: 'Vibrant Colour Themes',
+    desc: 'Bold, cheerful colours stimulate creativity and make the room feel fun and inviting for children of all ages.',
+    image: vibrantColourThemes
+  },
+  {
+    icon: '',
+    title: 'Space-Saving Bunk Beds',
+    desc: 'Bunk beds with built-in storage, desks, and play areas maximize floor space in shared or compact bedrooms.',
+    image: spaceSavingBunkBeds
+  },
+  {
+    icon: '',
+    title: 'Dedicated Study Zone',
+    desc: 'A well-lit, ergonomic study area with ample storage for books and supplies supports learning and focus.',
+    image: dedicatedStudyZone
+  },
+  {
+    icon: '',
+    title: 'Smart Toy Storage',
+    desc: 'Built-in cubbies, colourful bins, and low shelves make it easy for children to organize and access their toys.',
+    image: smartToyStorage
+  },
+  {
+    icon: '',
+    title: 'Theme-Based Designs',
+    desc: 'From space adventures to enchanted forests, themed bedrooms spark imagination and make bedtime exciting.',
+    image: themeBasedDesigns
+  },
+  {
+    icon: '',
+    title: 'Child-Safe Materials',
+    desc: 'Non-toxic paints, rounded furniture edges, and anti-tip fixtures ensure a safe environment for active children.',
+    image: childsafe
+  }
 ];
 
 const faqs = [
@@ -97,7 +145,7 @@ const KidsBedroomDesign = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Kids Bedroom - Kryoss Interior" />
+          <img src={vibrantColourThemes} alt="Kids Bedroom - Kryoss Interior" />
           <div className="blog-wide-image__caption">Creative Kids Bedroom Design â€¢ Kryoss Interior</div>
         </div>
 
@@ -138,7 +186,7 @@ const KidsBedroomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?w=900&q=80" alt="Young Children Bedroom" />
+              <img src={playfulSpaces} alt="Young Children Bedroom" />
             </div>
           </div>
 
@@ -159,7 +207,7 @@ const KidsBedroomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=900&q=80" alt="Teen Bedroom Design" />
+              <img src={coolSpacesForTeenagers} alt="Teen Bedroom Design" />
             </div>
           </div>
         </section>

@@ -3,6 +3,33 @@ import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import homeInterior from '../../assets/blogs/Home Interior.jpg';
 
+import bedroom from '../../assets/blogs/homeinterior/bedroom.jpg';
+
+import biophilicElements from '../../assets/blogs/homeinterior/Biophilic Elements.jpg';
+
+import biophilic from '../../assets/blogs/homeinterior/Biophilic.jpg';
+
+import homeInteriorDesignIdeas from '../../assets/blogs/homeinterior/Home-Interior-Design-Ideas.jpg';
+
+import minimalLuxe from '../../assets/blogs/homeinterior/Minimal Luxe.jpg';
+
+import modernLivingRoom from '../../assets/blogs/homeinterior/Modern Living Room Design.jpg';
+
+import modularKitchenInterior from '../../assets/blogs/homeinterior/Modular Kitchen Interior Ideas.jpg';
+
+import neutralPalettes from '../../assets/blogs/homeinterior/Neutral Palettes & Accents.jpg';
+
+import openConceptLayouts from '../../assets/blogs/homeinterior/Open-Concept Layouts.jpg';
+
+import smartHomeIntegration from '../../assets/blogs/homeinterior/Smart Home Integration.jpg';
+
+import smartHomes from '../../assets/blogs/homeinterior/Smart Homes.jpg';
+
+import smartStorageIntegration from '../../assets/blogs/homeinterior/Smart Storage Integration.jpg';
+
+import statementLighting from '../../assets/blogs/homeinterior/Statement Lighting.jpg';
+
+import sustainableDesign from '../../assets/blogs/homeinterior/Sustainable Design.jpg';
 const sections = ['intro', 'ideas', 'trends', 'process', 'benefits', 'faq', 'cta'];
 
 const toc = [
@@ -14,19 +41,73 @@ const toc = [
 ];
 
 const designIdeas = [
-  { icon: '', title: 'Statement Lighting', desc: 'Chandeliers, pendant clusters, and sculptural lighting instantly elevate a space. Layered lighting across ceiling, walls, and floors adds depth and warmth.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { icon: '', title: 'Neutral Palettes & Accents', desc: 'Beige, grey, and warm whites create a calm base. Add contrast with textured cushions, metallic finishes, or a vibrant accent chair.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
-  { icon: '', title: 'Smart Storage Integration', desc: 'Hidden cabinets, wall-mounted shelves, and multifunctional furniture keep clutter away while maintaining a clean aesthetic.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-  { icon: '', title: 'Open-Concept Layouts', desc: 'Merging dining and living areas creates visual continuity and improves spatial flow - ideal for modern apartments and compact homes.', image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80' },
-  { icon: '', title: 'Biophilic Elements', desc: 'Indoor plants, natural textures, and organic materials to improve well-being and connect your home to nature.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
-  { icon: '', title: 'Smart Home Integration', desc: 'Automated lighting, hidden tech, and integrated sound systems for a seamless, modern living experience.', image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80' },
+  {
+    icon: '',
+    title: 'Statement Lighting',
+    desc: 'Chandeliers, pendant clusters, and sculptural lighting instantly elevate a space. Layered lighting across ceiling, walls, and floors adds depth and warmth.',
+    image: statementLighting
+  },
+  {
+    icon: '',
+    title: 'Neutral Palettes & Accents',
+    desc: 'Beige, grey, and warm whites create a calm base. Add contrast with textured cushions, metallic finishes, or a vibrant accent chair.',
+    image: neutralPalettes
+  },
+  {
+    icon: '',
+    title: 'Smart Storage Integration',
+    desc: 'Hidden cabinets, wall-mounted shelves, and multifunctional furniture keep clutter away while maintaining a clean aesthetic.',
+    image: smartStorageIntegration
+  },
+  {
+    icon: '',
+    title: 'Open-Concept Layouts',
+    desc: 'Merging dining and living areas creates visual continuity and improves spatial flow - ideal for modern apartments and compact homes.',
+    image: openConceptLayouts
+  },
+  {
+    icon: '',
+    title: 'Biophilic Elements',
+    desc: 'Indoor plants, natural textures, and organic materials to improve well-being and connect your home to nature.',
+    image: biophilicElements
+  },
+  {
+    icon: '',
+    title: 'Smart Home Integration',
+    desc: 'Automated lighting, hidden tech, and integrated sound systems for a seamless, modern living experience.',
+    image: smartHomeIntegration
+  },
 ];
 
 const trends = [
-  { icon: '', title: 'Minimal Luxe', desc: 'Clean lines with premium textures like marble, brushed gold, and velvet accents.', color: '#c41e3a', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&q=80' },
-  { icon: '', title: 'Sustainable Design', desc: 'Eco-friendly materials, recycled wood, energy-efficient lighting, and low-VOC paints.', color: '#16a34a', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
-  { icon: '', title: 'Smart Homes', desc: 'Integrated lighting automation, smart curtains, and app-controlled appliances.', color: '#d97706', image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80' },
-  { icon: '', title: 'Biophilic', desc: 'Indoor plants, natural textures, and organic materials to improve well-being.', color: '#059669', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
+  {
+    icon: '',
+    title: 'Minimal Luxe',
+    desc: 'Clean lines with premium textures like marble, brushed gold, and velvet accents.',
+    color: '#c41e3a',
+    image: minimalLuxe
+  },
+  {
+    icon: '',
+    title: 'Sustainable Design',
+    desc: 'Eco-friendly materials, recycled wood, energy-efficient lighting, and low-VOC paints.',
+    color: '#16a34a',
+    image: sustainableDesign
+  },
+  {
+    icon: '',
+    title: 'Smart Homes',
+    desc: 'Integrated lighting automation, smart curtains, and app-controlled appliances.',
+    color: '#d97706',
+    image: smartHomes
+  },
+  {
+    icon: '',
+    title: 'Biophilic',
+    desc: 'Indoor plants, natural textures, and organic materials to improve well-being.',
+    color: '#059669',
+    image: biophilic
+  },
 ];
 
 const processSteps = [
@@ -137,7 +218,7 @@ const HomeInteriorDesign = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1600&q=80" alt="Modern Living Room - Kryoss Interior" />
+          <img src={modernLivingRoom} alt="Modern Living Room - Kryoss Interior" />
           <div className="blog-wide-image__caption">Modern Living Room Design â€¢ Kryoss Interior</div>
         </div>
 
@@ -181,7 +262,7 @@ const HomeInteriorDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '460px' }}>
-              <img src="https://images.unsplash.com/photo-1616594039964-40891a90b3b5?w=900&q=80" alt="Bedroom Design" />
+              <img src={bedroom} alt="Bedroom Design" />
             </div>
           </div>
         </section>
@@ -205,7 +286,7 @@ const HomeInteriorDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '460px' }}>
-              <img src="https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=900&q=80" alt="Modular Kitchen" />
+              <img src={modularKitchenInterior} alt="Modular Kitchen" />
             </div>
           </div>
         </section>

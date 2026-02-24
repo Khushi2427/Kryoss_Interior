@@ -2,12 +2,16 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import dcDesign from '../../assets/blogs/DC Design.jpg';
+import arjun from '../../assets/blogs/dcdesign/Arjun Mehta.jpg';
+import kavita from '../../assets/blogs/dcdesign/Kavitha Nair.jpg';
+import priya from '../../assets/blogs/dcdesign/Priya Sharma.jpg';
+
 const designers = [
   {
     name: 'Priya Sharma',
     role: 'Lead Interior Designer',
     specialty: 'Luxury Residential',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+    image: priya,
     quote: 'Design is not just about aesthetics - it\'s about creating spaces that tell the story of the people who live in them.',
     qualities: ['10+ years experience', 'Luxury residential specialist', 'CIDA certified', 'Award-winning designer'],
     style: 'Luxury Contemporary',
@@ -16,7 +20,7 @@ const designers = [
     name: 'Arjun Mehta',
     role: 'Senior Design Consultant',
     specialty: 'Modular & Smart Homes',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=600&q=80',
+    image: arjun,
     quote: 'The best design is invisible - it works so seamlessly that you only notice how good it feels to be in the space.',
     qualities: ['Smart home integration expert', 'Modular kitchen specialist', 'Space optimization guru', '300+ projects completed'],
     style: 'Modern Minimalist',
@@ -25,7 +29,7 @@ const designers = [
     name: 'Kavitha Nair',
     role: 'Creative Director',
     specialty: 'Biophilic & Sustainable Design',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600&q=80',
+    image: kavita,
     quote: 'Sustainable design isn\'t a trend - it\'s a responsibility. Every material choice we make has an impact on the world we live in.',
     qualities: ['Sustainable design pioneer', 'Biophilic design expert', 'Material science background', 'Published author'],
     style: 'Biophilic & Sustainable',

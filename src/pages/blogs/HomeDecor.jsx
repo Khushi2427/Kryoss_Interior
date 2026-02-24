@@ -2,16 +2,84 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import homeDecor from '../../assets/blogs/Home Decor.jpg';
+import accent from '../../assets/blogs/homedecor/Accent Lighting.jpeg';
+
+import candlesAndScent from '../../assets/blogs/homedecor/Candles & Scent.jpeg';
+
+import curatedHomeDecor from '../../assets/blogs/homedecor/Curated Home Decor Styling.jpg';
+
+import decorativeVases from '../../assets/blogs/homedecor/Decorative Vases.jpg';
+
+import galleryWalls from '../../assets/blogs/homedecor/Gallery Walls.jpg';
+
+import homeDecorIdeas from '../../assets/blogs/homedecor/Home-Decor-Ideas-That-Elevate-Every-Space.jpg';
+
+import indoorPlants from '../../assets/blogs/homedecor/Indoor Plants.jpg';
+
+import professionalStylingSecrets from '../../assets/blogs/homedecor/Professional Styling Secrets.jpg';
+
+import shelfStyling from '../../assets/blogs/homedecor/Shelf Styling.jpeg';
+
+import statementMirrors from '../../assets/blogs/homedecor/Statement Mirrors.jpg';
+
+import texturedRugs from '../../assets/blogs/homedecor/Textured Rugs.jpeg';
+
+import throwPillowsBlankets from '../../assets/blogs/homedecor/Throw Pillows & Blankets.png';
 const decorIdeas = [
-  { icon: '', title: 'Gallery Walls', desc: 'Curated collections of art, photos, and prints arranged in a cohesive grid or salon-style display.', image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600&q=80' },
-  { icon: '', title: 'Indoor Plants', desc: 'From fiddle-leaf figs to trailing pothos, plants add life, colour, and improved air quality to any room.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
-  { icon: '', title: 'Statement Mirrors', desc: 'Oversized or uniquely framed mirrors reflect light, create depth, and serve as striking decorative focal points.', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
-  { icon: '', title: 'Textured Rugs', desc: 'A well-chosen rug anchors a seating area, adds warmth underfoot, and introduces colour and pattern to the room.', image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80' },
-  { icon: '', title: 'Candles & Scent', desc: 'Scented candles and diffusers create ambiance and engage the senses for a truly immersive home experience.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { icon: '', title: 'Decorative Vases', desc: 'Sculptural vases in ceramic, glass, or metal add artistic interest and can be styled with fresh or dried flowers.', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&q=80' },
-  { icon: '', title: 'Accent Lighting', desc: 'Table lamps, floor lamps, and LED strips create warm pools of light that add depth and drama to any space.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { icon: '', title: 'Throw Pillows & Blankets', desc: 'Layering cushions and throws in complementary textures and colours instantly elevates sofas and beds.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-  { icon: '', title: 'Shelf Styling', desc: 'Thoughtfully arranged books, plants, and objects on shelves create visual interest and reflect your personality.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
+  {
+    icon: '',
+    title: 'Gallery Walls',
+    desc: 'Curated collections of art, photos, and prints arranged in a cohesive grid or salon-style display.',
+    image: galleryWalls,
+  },
+  {
+    icon: '',
+    title: 'Indoor Plants',
+    desc: 'From fiddle-leaf figs to trailing pothos, plants add life, colour, and improved air quality to any room.',
+    image: indoorPlants,
+  },
+  {
+    icon: '',
+    title: 'Statement Mirrors',
+    desc: 'Oversized or uniquely framed mirrors reflect light, create depth, and serve as striking decorative focal points.',
+    image: statementMirrors,
+  },
+  {
+    icon: '',
+    title: 'Textured Rugs',
+    desc: 'A well-chosen rug anchors a seating area, adds warmth underfoot, and introduces colour and pattern to the room.',
+    image: texturedRugs,
+  },
+  {
+    icon: '',
+    title: 'Candles & Scent',
+    desc: 'Scented candles and diffusers create ambiance and engage the senses for a truly immersive home experience.',
+    image: candlesAndScent,
+  },
+  {
+    icon: '',
+    title: 'Decorative Vases',
+    desc: 'Sculptural vases in ceramic, glass, or metal add artistic interest and can be styled with fresh or dried flowers.',
+    image: decorativeVases,
+  },
+  {
+    icon: '',
+    title: 'Accent Lighting',
+    desc: 'Table lamps, floor lamps, and LED strips create warm pools of light that add depth and drama to any space.',
+    image: accent,
+  },
+  {
+    icon: '',
+    title: 'Throw Pillows & Blankets',
+    desc: 'Layering cushions and throws in complementary textures and colours instantly elevates sofas and beds.',
+    image: throwPillowsBlankets,
+  },
+  {
+    icon: '',
+    title: 'Shelf Styling',
+    desc: 'Thoughtfully arranged books, plants, and objects on shelves create visual interest and reflect your personality.',
+    image: shelfStyling,
+  },
 ];
 
 const faqs = [
@@ -100,7 +168,7 @@ const HomeDecor = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1600&q=80" alt="Beautiful Home Decor - Kryoss Interior" />
+          <img src={curatedHomeDecor} alt="Beautiful Home Decor - Kryoss Interior" />
           <div className="blog-wide-image__caption">Curated Home Decor Styling â€¢ Kryoss Interior</div>
         </div>
 
@@ -141,7 +209,7 @@ const HomeDecor = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80" alt="Interior Styling" />
+              <img src={homeDecorIdeas} alt="Interior Styling" />
             </div>
           </div>
         </section>

@@ -3,14 +3,62 @@ import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import studyRoom from '../../assets/blogs/Study Room.jpg';
 
+import acoustic from '../../assets/blogs/study/6 semi image/Acoustic Panels.jpg';
+
+import biophilic from '../../assets/blogs/study/6 semi image/Biophilic Accents.jpg';
+
+import builtInBookshelves from '../../assets/blogs/study/6 semi image/Built-in Bookshelves.jpg';
+
+import cableManagement from '../../assets/blogs/study/6 semi image/Cable Management.jpg';
+
+import ergonomicWorkstation from '../../assets/blogs/study/6 semi image/Ergonomic Workstation.jpg';
+
+import taskLighting from '../../assets/blogs/study/6 semi image/Task Lighting.jpg';
+
+import focusedStudyRoom from '../../assets/blogs/study/Focused Student Study Room.jpg';
+
+import premiumHomeOffice from '../../assets/blogs/study/Premium Home Office Design â€¢ Kryoss Interior.jpg';
+
+import professionalHomeOffice from '../../assets/blogs/study/Professional Home Office Design.jpg';
 const studyIdeas = [
-  { icon: '', title: 'Task Lighting', desc: 'A dedicated desk lamp with adjustable brightness reduces eye strain and improves focus during long study sessions.', image: 'https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=600&q=80' },
-  { icon: '', title: 'Ergonomic Workstation', desc: 'An adjustable chair and desk at the correct height prevent back pain and improve posture for hours of productive work.', image: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=600&q=80' },
-  { icon: '', title: 'Built-in Bookshelves', desc: 'Floor-to-ceiling bookshelves keep books, files, and reference materials organized and within easy reach.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-  { icon: '', title: 'Acoustic Panels', desc: 'Sound-absorbing panels on walls reduce noise distractions and create a quieter, more focused work environment.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { icon: '', title: 'Cable Management', desc: 'Concealed cable channels and built-in power points keep the desk area tidy and free from distracting clutter.', image: 'https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80' },
-  { icon: '', title: 'Biophilic Accents', desc: 'A small plant or two on the desk improves air quality, reduces stress, and boosts creativity and productivity.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
+  {
+    icon: '',
+    title: 'Task Lighting',
+    desc: 'A dedicated desk lamp with adjustable brightness reduces eye strain and improves focus during long study sessions.',
+    image: taskLighting
+  },
+  {
+    icon: '',
+    title: 'Ergonomic Workstation',
+    desc: 'An adjustable chair and desk at the correct height prevent back pain and improve posture for hours of productive work.',
+    image: ergonomicWorkstation
+  },
+  {
+    icon: '',
+    title: 'Built-in Bookshelves',
+    desc: 'Floor-to-ceiling bookshelves keep books, files, and reference materials organized and within easy reach.',
+    image: builtInBookshelves
+  },
+  {
+    icon: '',
+    title: 'Acoustic Panels',
+    desc: 'Sound-absorbing panels on walls reduce noise distractions and create a quieter, more focused work environment.',
+    image: acoustic
+  },
+  {
+    icon: '',
+    title: 'Cable Management',
+    desc: 'Concealed cable channels and built-in power points keep the desk area tidy and free from distracting clutter.',
+    image: cableManagement
+  },
+  {
+    icon: '',
+    title: 'Biophilic Accents',
+    desc: 'A small plant or two on the desk improves air quality, reduces stress, and boosts creativity and productivity.',
+    image: biophilic
+  }
 ];
+
 
 const faqs = [
   { q: 'What is the ideal study room layout?', a: 'Position the desk near a window for natural light, but avoid direct glare on the screen. Ensure the chair faces away from the door to minimize distractions. Keep frequently used items within arm\'s reach.' },
@@ -98,7 +146,7 @@ const StudyRoomDesign = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=1600&q=80" alt="Home Office - Kryoss Interior" />
+          <img src={premiumHomeOffice} alt="Home Office - Kryoss Interior" />
           <div className="blog-wide-image__caption">Premium Home Office Design â€¢ Kryoss Interior</div>
         </div>
 
@@ -139,7 +187,7 @@ const StudyRoomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=900&q=80" alt="Home Office Design" />
+              <img src={professionalHomeOffice} alt="Home Office Design" />
             </div>
           </div>
 
@@ -160,7 +208,7 @@ const StudyRoomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1497215842964-222b4bef97ed?w=900&q=80" alt="Student Study Room" />
+              <img src={focusedStudyRoom} alt="Student Study Room" />
             </div>
           </div>
         </section>

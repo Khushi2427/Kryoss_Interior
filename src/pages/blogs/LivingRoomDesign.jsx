@@ -2,6 +2,20 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import livingRoom from '../../assets/blogs/Living Room.jpg';
+
+import livingRoomDesignIdeas from '../../assets/blogs/living/Living-Room-Design-Ideas.jpg';
+
+import luxuryContemporary from '../../assets/blogs/living/Luxury Contemporary.jpg';
+
+import luxuryContemporaryLivingRoom from '../../assets/blogs/living/Luxury-Contemporary-Living-Room.jpg';
+
+import modernMinimalist from '../../assets/blogs/living/Modern Minimalist.jpg';
+
+import openConceptLayout from '../../assets/blogs/living/Open Concept Layout.jpeg';
+
+import smartStorageDesign from '../../assets/blogs/living/Smart Storage Design.jpg';
+
+import stunning from '../../assets/blogs/living/stunning.jpg';
 const faqs = [
   { q: 'What is the ideal living room size for modern design?', a: 'Smart layout planning can transform even compact spaces into functional and stylish living areas. The key is optimizing furniture placement, using vertical space, and selecting multi-functional pieces.' },
   { q: 'How long does a living room interior project take?', a: 'Projects typically range from 4-8 weeks. This includes design finalization (1-2 weeks), material procurement (2 weeks), and installation (2-3 weeks).' },
@@ -10,10 +24,30 @@ const faqs = [
 ];
 
 const designStyles = [
-  { num: '01', title: 'Modern Minimalist', desc: 'Clean lines, neutral palettes, and zero clutter. Intentional styling with concealed storage and layered lighting.', image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=700&q=80' },
-  { num: '02', title: 'Luxury Contemporary', desc: 'Statement wall panels, metallic accents, premium upholstery, and custom TV consoles with ambient lighting.', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=700&q=80' },
-  { num: '03', title: 'Smart Storage Design', desc: 'Floating shelves, built-in wall cabinets, hidden drawers in seating, and modular TV units.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=700&q=80' },
-  { num: '04', title: 'Open Concept Layout', desc: 'Seamless flow between living, dining, and kitchen areas using rugs, ceiling designs, and coordinated palettes.', image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=700&q=80' },
+  {
+    num: '01',
+    title: 'Modern Minimalist',
+    desc: 'Clean lines, neutral palettes, and zero clutter. Intentional styling with concealed storage and layered lighting.',
+    image: modernMinimalist
+  },
+  {
+    num: '02',
+    title: 'Luxury Contemporary',
+    desc: 'Statement wall panels, metallic accents, premium upholstery, and custom TV consoles with ambient lighting.',
+    image: luxuryContemporary
+  },
+  {
+    num: '03',
+    title: 'Smart Storage Design',
+    desc: 'Floating shelves, built-in wall cabinets, hidden drawers in seating, and modular TV units.',
+    image: smartStorageDesign
+  },
+  {
+    num: '04',
+    title: 'Open Concept Layout',
+    desc: 'Seamless flow between living, dining, and kitchen areas using rugs, ceiling designs, and coordinated palettes.',
+    image: openConceptLayout
+  },
 ];
 
 const colorTrends = [
@@ -128,7 +162,7 @@ const LivingRoomDesign = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80" alt="Premium Living Room - Kryoss Interior" />
+          <img src={livingRoomDesignIdeas} alt="Premium Living Room - Kryoss Interior" />
           <div className="blog-wide-image__caption">Luxury Contemporary Living Room â€¢ Kryoss Interior</div>
         </div>
 
@@ -172,7 +206,7 @@ const LivingRoomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80" alt="Feature Wall Design" />
+              <img src={luxuryContemporaryLivingRoom} alt="Feature Wall Design" />
             </div>
           </div>
         </section>

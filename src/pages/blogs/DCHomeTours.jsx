@@ -2,6 +2,10 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import dcHomeTours from '../../assets/blogs/DC Home Tours.jpg';
+import gupta from '../../assets/blogs/dchome/The Gupta Apartment.jpg'
+import malhotra from '../../assets/blogs/dchome/The Malhotra Residence.jpg'
+import verma from '../../assets/blogs/dchome/The Verma Villa.jpg'
+
 
 const dcTours = [
   {
@@ -10,7 +14,7 @@ const dcTours = [
     area: '3,200 sq ft',
     style: 'Modern Luxury',
     duration: '12 weeks',
-    image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=900&q=80',
+    image: malhotra,
     highlights: ['Custom Italian marble flooring', 'Bespoke modular kitchen', 'Home theatre room', 'Automated lighting system'],
     desc: 'A stunning 3BHK in Greater Kailash transformed into a modern luxury home with premium Italian finishes, custom millwork, and seamless smart home integration.',
   },
@@ -20,7 +24,7 @@ const dcTours = [
     area: '1,600 sq ft',
     style: 'Scandinavian Minimal',
     duration: '7 weeks',
-    image: 'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=900&q=80',
+    image: gupta,
     highlights: ['Space-maximizing design', 'Warm wood and white palette', 'Multifunctional furniture', 'Clever hidden storage'],
     desc: 'A compact Dwarka apartment transformed into a bright, airy Scandinavian-inspired home - proving that great design is not about size, but about thoughtful choices.',
   },
@@ -30,7 +34,7 @@ const dcTours = [
     area: '5,500 sq ft',
     style: 'Contemporary Classic',
     duration: '20 weeks',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=900&q=80',
+    image: verma,
     highlights: ['Double-height entrance foyer', 'Custom art installations', 'Landscaped terrace', 'Private gym and spa'],
     desc: 'A grand villa in Faridabad designed with a contemporary classic aesthetic - timeless elegance meets modern comfort across four floors of meticulously crafted spaces.',
   },

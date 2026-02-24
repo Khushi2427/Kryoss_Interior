@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar';
 import videos from '../../assets/more/videos.png';
 import '../blogs/BlogArticle.css';
 import { PlayCircle, Film } from 'lucide-react';
-
+import luxury from '../../assets/more/more/videos semi images/luxury.jpg';
 const Videos = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -55,7 +55,7 @@ const Videos = () => {
                         <div key={v} className="blog-img-card">
                             <div style={{ position: 'relative', height: '300px', overflow: 'hidden' }}>
                                 <img
-                                    src={`https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800&id=${v}`}
+                                    src={luxury}
                                     alt="Video Thumbnail"
                                     className="blog-img-card__image"
                                 />
