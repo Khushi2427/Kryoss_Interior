@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import franchise from '../../assets/more/franchisepartner.png';
+import franchise2 from '../../assets/more/franchise2.png';
 import '../blogs/BlogArticle.css';
 import { Building, TrendingUp, Users, ShieldCheck, CheckSquare, ArrowRight, BarChart } from 'lucide-react';
 
@@ -34,7 +35,7 @@ const BecomeFranchisee = () => {
                 {/* Intro Split */}
                 <div className="blog-split">
                     <div className="blog-image-wrap">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80" alt="Business Planning" />
+                        <img src={franchise2} alt="Business Planning" />
                     </div>
                     <div>
                         <div className="section-label">Why Franchise?</div>

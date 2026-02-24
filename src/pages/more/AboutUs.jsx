@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import about from '../../assets/more/about.png';
+import about1 from '../../assets/more/about1.png';
 import '../blogs/BlogArticle.css';
 import { Target, Users, Layout, ShieldCheck, Clock, Lightbulb, ArrowRight, Heart, Star } from 'lucide-react';
 
@@ -35,7 +36,7 @@ const AboutUs = () => {
                 {/* Intro Split */}
                 <div className="blog-split">
                     <div className="blog-image-wrap">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80" alt="Interior Team" />
+                        <img src={about1} alt="Interior Team" />
                         <div className="blog-image-caption">Teamwork & Vision</div>
                     </div>
                     <div>

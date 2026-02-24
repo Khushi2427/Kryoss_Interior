@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import whykryoss from '../../assets/more/whykryoss.png';
+import design from '../../assets/more/more/why/design.jpg';
 
 import '../blogs/BlogArticle.css';
 import { Home, Layout, ShieldCheck, Clock, Smile, Heart, CheckSquare } from 'lucide-react';
@@ -35,7 +36,7 @@ const WhyKryoss = () => {
                 {/* Intro Split */}
                 <div className="blog-split">
                     <div className="blog-image-wrap">
-                        <img src="https://images.unsplash.com/photo-1588854337440-adbf8649cc74?auto=format&fit=crop&q=80" alt="Family Living" />
+                        <img src={design} alt="Family Living" />
                     </div>
                     <div>
                         <div className="section-label">Real Living</div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import channel from '../../assets/more/channals.png';
+import channel2 from '../../assets/more/channel2.png';
 import '../blogs/BlogArticle.css';
 import { UserCheck, PieChart, MessageCircle, DollarSign, Handshake, Users, ArrowRight } from 'lucide-react';
 
@@ -34,7 +35,7 @@ const ChannelProgram = () => {
                 {/* Intro Split */}
                 <div className="blog-split">
                     <div className="blog-image-wrap">
-                        <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80" alt="Professional Handshake" />
+                        <img src={channel2} alt="Professional Handshake" />
                         <div className="blog-image-caption">Partnership & Trust</div>
                     </div>
                     <div>

@@ -1,7 +1,14 @@
 import React, { useEffect } from 'react';
 import { Star, MapPin, Quote } from 'lucide-react';
 import Navbar from '../../components/Navbar';
+import hero from '../../assets/more/more/hero/client review.jpg';
+import client1 from '../../assets/more/more/client/Amit Desai.jpg';
+import client2 from '../../assets/more/more/client/Anjali Gupta.jpg';
+import client3 from '../../assets/more/more/client/Priya Sharma.jpg';
+import client4 from '../../assets/more/more/client/Rahul Verma.jpg';
+import client5 from '../../assets/more/more/client/Sneha Reddy.jpg';
 import '../blogs/BlogArticle.css';
+
 
 const reviewsList = [
     {
@@ -9,35 +16,35 @@ const reviewsList = [
         location: "Bren Imperia, Bengaluru",
         text: "KryossInterior has made our flat into a home, a home which we always wanted. They understood us and gave us our dream home. The journey with them has been an amazing and smooth one for sure.",
         rating: 5,
-        image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&q=80"
+        image: client3
     },
     {
         name: "Rahul Verma",
         location: "Goregaon, Mumbai",
         text: "I absolutely loved the work. I would definitely recommend KryossInterior to anyone. They are very professional and made the entire experience amazing. The best part is that they clearly understood our requirements and budget.",
         rating: 5,
-        image: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80"
+        image: client4
     },
     {
         name: "Sneha Reddy",
         location: "Nungambakkam, Chennai",
         text: "Our designer was extremely patient and creative. She gave us multiple options and helped visualize everything in 3D before execution. The quality of materials used is top-notch.",
         rating: 4,
-        image: "https://images.unsplash.com/photo-1600566753086-00f18efc2291?auto=format&fit=crop&q=80"
+        image: client5
     },
     {
         name: "Amit Desai",
         location: "Worli, Mumbai",
         text: "The completely transformed our living space. The design elements perfectly blend modern aesthetics with functional utility. The execution team was professional and completed the project on time.",
         rating: 5,
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80"
+        image: client1
     },
     {
         name: "Anjali Gupta",
         location: "DLF Phase 5, Gurgaon",
         text: "From start to finish, the entire process was seamless. The designers truly understood our vision and brought it to life with incredible attention to detail. Our new kitchen is both beautiful and highly functional.",
         rating: 5,
-        image: "https://images.unsplash.com/photo-1556910103-1c02745a872f?auto=format&fit=crop&q=80"
+        image: client2
     }
 ];
 
@@ -53,7 +60,7 @@ const Reviews = () => {
             {/* Hero Section */}
             <div className="blog-hero" style={{ minHeight: '600px', height: '60vh' }}>
                 <img
-                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80"
+                    src={hero}
                     alt="Customer Stories"
                     className="blog-hero__image"
                 />

@@ -1,5 +1,6 @@
 import React from 'react';
 import channel from '../../assets/more/channals.png';
+import channel2 from '../../assets/more/channel2.png';
 const ChannelPartner = () => {
     return (
         <div className="page-container" style={{ paddingTop: '8rem' }}>
