@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../../components/Navbar';
 import partnerpolicy from '../../assets/more/partnerpolicy.png';
 import '../blogs/BlogArticle.css';
-import scope from '../../assets/more/more/policy/scope.jpg';
+import scope from '../../assets/scope.jpg';
 import { Shield, FileText, Lock, AlertCircle, CheckCircle } from 'lucide-react';
 
 const PartnerPolicy = () => {
