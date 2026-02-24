@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import kidsBedroomGuide from '../../assets/guides/Kids-Room-Design-Guide.jpg';
+import designGrows from '../../assets/guides/Design-that-grows.jpg';
+import schoolAge from '../../assets/guides/School-Age.jpg';
+import teenagers from '../../assets/guides/Teenagers.jpg';
+import toddlers from '../../assets/guides/Toddlers.jpg';
 
 const KidsRoom = () => {
   const [activeAge, setActiveAge] = useState(0);
@@ -19,28 +24,28 @@ const KidsRoom = () => {
       icon: '',
       desc: "Safety and open play space take priority. Everything should be low, padded, and reachable.",
       points: ["Soft flooring or rugs", "Low-height storage", "Open play space", "Rounded edges"],
-      img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80"
+      img: toddlers
     },
     {
       label: "School-Age (6-12 yrs)",
       icon: '',
       desc: "A dedicated study zone becomes essential. Balance between creativity, organisation, and focus.",
       points: ["Study desk setup", "Book storage & shelves", "Balanced colours", "Activity corner"],
-      img: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?w=900&q=80"
+      img: schoolAge
     },
     {
       label: "Teenagers (13-18 yrs)",
       icon: '',
       desc: "Personal expression and independence. Neutral tones let them own the space.",
       points: ["Neutral tones", "Adult furniture", "Personal décor", "Multi-purpose desk"],
-      img: "https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=900&q=80"
+      img: teenagers
     }
   ];
 
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=1800&q=85" alt="Kids Room" className="blog-hero__image" />
+        <img src={kidsBedroomGuide} alt="Kids Room" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Kids Room<br /><em>Design Guide</em></h1>
@@ -54,7 +59,7 @@ const KidsRoom = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Kids Room Detail" />
+              <img src={designGrows} alt="Kids Room Detail" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Evolution</div>

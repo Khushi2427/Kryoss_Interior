@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import studyRoom from '../../assets/guides/Study Room.jpg';
+import studentFocus from '../../assets/guides/Student Focus.jpg';
+import designForFlow from '../../assets/guides/Design for Flow.jpg';
+import workFromHome from '../../assets/guides/Work from Home.jpg';
+import kidsCorner from '../../assets/guides/Kids Corner.jpeg';
+
 
 const StudyRoom = () => {
   const [activeIdea, setActiveIdea] = useState(0);
@@ -11,21 +17,21 @@ const StudyRoom = () => {
       icon: '',
       desc: "Designed for long hours of concentration. Features spacious desks for books and devices, reducing clutter.",
       points: ["Spacious desk surface", "Adjustable chair", "Open shelving", "Pin board for notes"],
-      img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&q=80"
+      img: studentFocus
     },
     {
       title: "Work from Home",
       icon: '',
       desc: "Professional setups that balance comfort with video-call aesthetics. Focuses on ergonomics and cable management.",
       points: ["Cable management", "Ergonomic chair", "Document storage", "Ideal lighting angle"],
-      img: "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&q=80"
+      img: workFromHome
     },
     {
       title: "Kids Corner",
       icon: '',
       desc: "A creative yet organized space that grows with the child. Safety and accessibility are key.",
       points: ["Adjustable furniture", "Accessible bins", "Creative wall space", "Soft task lighting"],
-      img: "https://images.unsplash.com/photo-1584697964403-9f0ef57d4b5f?w=900&q=80"
+      img: kidsCorner
     }
   ];
 
@@ -40,7 +46,7 @@ const StudyRoom = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=1600&q=85" alt="Peaceful Study" className="blog-hero__image" />
+        <img src={studyRoom} alt="Peaceful Study" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Study Room<br /><em>Design Guide</em></h1>
@@ -54,7 +60,7 @@ const StudyRoom = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=900&q=80" alt="Productive Space" />
+              <img src={designForFlow} alt="Productive Space" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Productivity Core</div>

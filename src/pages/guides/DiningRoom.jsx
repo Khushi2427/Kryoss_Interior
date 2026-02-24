@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import diningRoom from '../../assets/guides/Dining-Room.jpg';
+import lifeHappensTog from '../../assets/guides/Where life happens together.jpg';
+import theTable from '../../assets/guides/The Table.webp';
+import Ambience from '../../assets/guides/Ambience.png';
+import Storage from '../../assets/guides/Storage.jpg';
+import statementLighting from '../../assets/guides/Statement Lighting.jpg';
+import comfortableSetting from '../../assets/guides/Comfortable Seating.jpg';
 
+
+
+Dining-Room
 const DiningRoom = () => {
   const [activeElement, setActiveElement] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
 
   const keyElements = [
-    { title: "The Table", icon: '', desc: "Rectangular for large rooms, round for compact spaces. Allow 3ft clearance all around.", img: "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=900&q=80" },
-    { title: "Comfortable Seating", icon: '', desc: "Upholstered chairs encourage lingering. Ensure adequate back support.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" },
-    { title: "Statement Lighting", icon: '', desc: "A low-hanging pendant or chandelier anchors the dining zone.", img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=900&q=80" },
-    { title: "Storage", icon: '', desc: "Crockery units and sideboards keep tableware accessible and display-worthy.", img: "https://images.unsplash.com/photo-1615874694520-474822394e73?w=900&q=80" },
-    { title: "Ambience", icon: '', desc: "Warm colours and texture (wood, linen) create an inviting atmosphere.", img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" }
+    { title: "The Table", icon: '', desc: "Rectangular for large rooms, round for compact spaces. Allow 3ft clearance all around.", img: theTable },
+    { title: "Comfortable Seating", icon: '', desc: "Upholstered chairs encourage lingering. Ensure adequate back support.", img: comfortableSetting },
+    { title: "Statement Lighting", icon: '', desc: "A low-hanging pendant or chandelier anchors the dining zone.", img: statementLighting },
+    { title: "Storage", icon: '', desc: "Crockery units and sideboards keep tableware accessible and display-worthy.", img: Storage },
+    { title: "Ambience", icon: '', desc: "Warm colours and texture (wood, linen) create an inviting atmosphere.", img: Ambience }
   ];
 
   const smallRoomTips = [
@@ -23,7 +33,7 @@ const DiningRoom = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=1800&q=85" alt="Elegant Dining" className="blog-hero__image" />
+        <img src={diningRoom} alt="Elegant Dining" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Dining Room<br /><em>Design Guide</em></h1>
@@ -37,7 +47,7 @@ const DiningRoom = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1600489000022-c2086d79f9d4?w=900&q=80" alt="Family Dining" />
+              <img src={lifeHappensTog} alt="Family Dining" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Gathering Place</div>

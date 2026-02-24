@@ -1,5 +1,14 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import bathBanner from '../../assets/guides/Bathroom banner.jpg';
+import bathCareful from '../../assets/guides/Bathrooms need the careful planning.jpg';
+import flooringWalls from '../../assets/guides/Flooring & Walls.jpg';
+import storageSolutions from '../../assets/guides/Storage Solutions.jpg';
+import sanitaryFittings from '../../assets/guides/Sanitary Fittings.jpeg';
+import layoutPlanning from '../../assets/guides/Layout Planning.jpg';
+import lightingVentilation from '../../assets/guides/Lighting & Ventilation.jpg';
+
+
 
 const Bathroom = () => {
   const [activeElement, setActiveElement] = useState(0);
@@ -11,7 +20,7 @@ const Bathroom = () => {
       title: "Layout Planning",
       icon: '',
       desc: "Separate wet and dry areas with correct placement of WC, washbasin, and shower. Enough circulation space makes even small bathrooms feel organized.",
-      img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=80",
+      img: layoutPlanning,
       tags: ["Zoning", "Circulation", "Placement"]
     },
     {
@@ -19,7 +28,7 @@ const Bathroom = () => {
       title: "Flooring & Walls",
       icon: '',
       desc: "Anti-skid floor tiles, moisture-resistant wall tiles, and easy-to-clean surfaces. Material quality directly affects safety and longevity.",
-      img: "https://images.unsplash.com/photo-1620626011761-996317702782?w=900&q=80",
+      img: flooringWalls,
       tags: ["Anti-skid", "Waterproof", "Durable"]
     },
     {
@@ -27,7 +36,7 @@ const Bathroom = () => {
       title: "Storage Solutions",
       icon: '',
       desc: "Vanity units, mirror cabinets, recessed wall shelves, and under-sink storage. Smart storage keeps essentials accessible without mess.",
-      img: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=900&q=80",
+      img: storageSolutions,
       tags: ["Vanity", "Shelves", "Cabinets"]
     },
     {
@@ -35,7 +44,7 @@ const Bathroom = () => {
       title: "Lighting & Ventilation",
       icon: '',
       desc: "Bright task lighting near mirrors, soft ambient lighting, and exhaust fans or natural ventilation to prevent moisture buildup and odour.",
-      img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=80",
+      img: lightingVentilation,
       tags: ["Task Light", "Ambient", "Exhaust"]
     },
     {
@@ -43,7 +52,7 @@ const Bathroom = () => {
       title: "Sanitary Fittings",
       icon: '',
       desc: "Wall-mounted WC for easy cleaning, quality faucets, and shower partitions for wet areas. Reliable fixtures reduce maintenance issues over time.",
-      img: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=900&q=80",
+      img: sanitaryFittings,
       tags: ["Wall-mount", "Faucets", "Partitions"]
     }
   ];
@@ -59,7 +68,7 @@ const Bathroom = () => {
     <div className="blog-page">
       {/* ── HERO ───────────────────────────────────────────────── */}
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1600&q=85" alt="Elegant Bathroom" className="blog-hero__image" />
+        <img src={bathBanner} alt="Elegant Bathroom" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Bathroom<br /><em>Design Guide</em></h1>
@@ -74,7 +83,7 @@ const Bathroom = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=900&q=80" alt="Modern Bathroom" />
+              <img src={bathCareful} alt="Modern Bathroom" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Why It Matters</div>
