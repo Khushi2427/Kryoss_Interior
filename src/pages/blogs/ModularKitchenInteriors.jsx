@@ -3,15 +3,61 @@ import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import modularKitchen from '../../assets/blogs/Modular Kitchen.jpg';
 
-const kitchenIdeas = [
-  { icon: '', title: 'L-Shape Layout', desc: 'Perfect for medium-sized kitchens, the L-shape maximizes corner space and creates an efficient work triangle.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
-  { icon: '', title: 'U-Shape Layout', desc: 'Ideal for large kitchens, the U-shape provides maximum storage and counter space on three walls.', image: 'https://images.unsplash.com/photo-1556910103-1c02745a30bf?w=600&q=80' },
-  { icon: '', title: 'Island Kitchen', desc: 'A kitchen island adds extra prep space, seating, and storage while becoming the social hub of the home.', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80' },
-  { icon: '', title: 'Parallel Layout', desc: 'Two parallel counters facing each other - efficient for narrow kitchens and professional-style cooking.', image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=600&q=80' },
-  { icon: '', title: 'Handleless Cabinets', desc: 'Push-to-open or J-pull cabinets create a seamless, minimalist look that is easy to clean and maintain.', image: 'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80' },
-  { icon: '', title: 'Quartz Countertops', desc: 'Engineered quartz is scratch-resistant, non-porous, and available in hundreds of colours and patterns.', image: 'https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&q=80' },
-];
+import handleless from '../../assets/blogs/modular/Modular Kitchen Layouts & Ideas/Handleless Cabinets.jpg';
 
+import island from '../../assets/blogs/modular/Modular Kitchen Layouts & Ideas/Island Kitchen.jpg';
+
+import lShaped from '../../assets/blogs/modular/Modular Kitchen Layouts & Ideas/L-Shaped Kitchens.jpg';
+
+import parallel from '../../assets/blogs/modular/Modular Kitchen Layouts & Ideas/Parallel Kitchens.jpg';
+
+import quartz from '../../assets/blogs/modular/Modular Kitchen Layouts & Ideas/Quartz Countertops.jpg';
+
+import uShaped from '../../assets/blogs/modular/Modular Kitchen Layouts & Ideas/U-Shaped Kitchens.jpg';
+
+import intelligentStorage from '../../assets/blogs/modular/Intelligent Kitchen Storage.jpg';
+
+import premiumCabinet from '../../assets/blogs/modular/Premium Cabinet Finishes.jpg';
+
+
+const kitchenIdeas = [
+  {
+    icon: '',
+    title: 'L-Shape Layout',
+    desc: 'Perfect for medium-sized kitchens, the L-shape maximizes corner space and creates an efficient work triangle.',
+    image: lShaped
+  },
+  {
+    icon: '',
+    title: 'U-Shape Layout',
+    desc: 'Ideal for large kitchens, the U-shape provides maximum storage and counter space on three walls.',
+    image: uShaped
+  },
+  {
+    icon: '',
+    title: 'Island Kitchen',
+    desc: 'A kitchen island adds extra prep space, seating, and storage while becoming the social hub of the home.',
+    image: island
+  },
+  {
+    icon: '',
+    title: 'Parallel Layout',
+    desc: 'Two parallel counters facing each other - efficient for narrow kitchens and professional-style cooking.',
+    image: parallel
+  },
+  {
+    icon: '',
+    title: 'Handleless Cabinets',
+    desc: 'Push-to-open or J-pull cabinets create a seamless, minimalist look that is easy to clean and maintain.',
+    image: handleless
+  },
+  {
+    icon: '',
+    title: 'Quartz Countertops',
+    desc: 'Engineered quartz is scratch-resistant, non-porous, and available in hundreds of colours and patterns.',
+    image: quartz
+  }
+];
 const faqs = [
   { q: 'What is the best modular kitchen layout for a small kitchen?', a: 'For small kitchens, a straight or L-shaped layout works best. Use wall-mounted cabinets to maximize vertical storage, and choose light colours to make the space feel larger.' },
   { q: 'How long does a modular kitchen installation take?', a: 'A standard modular kitchen installation takes 7-14 days. This includes delivery, assembly, and fitting. Custom designs with special finishes may take 3-4 weeks.' },
@@ -102,7 +148,7 @@ const ModularKitchenInteriors = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80" alt="Premium Modular Kitchen - Kryoss Interior" />
+          <img src={premiumCabinet} alt="Premium Modular Kitchen - Kryoss Interior" />
           <div className="blog-wide-image__caption">Premium Modular Kitchen with Island â€¢ Kryoss Interior</div>
         </div>
 
@@ -143,7 +189,7 @@ const ModularKitchenInteriors = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=900&q=80" alt="Kitchen Cabinet Finishes" />
+              <img src={intelligentStorage} alt="Kitchen Cabinet Finishes" />
             </div>
           </div>
 
@@ -164,7 +210,7 @@ const ModularKitchenInteriors = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=900&q=80" alt="Kitchen Storage Solutions" />
+              <img src={island} alt="Kitchen Storage Solutions" />
             </div>
           </div>
         </section>

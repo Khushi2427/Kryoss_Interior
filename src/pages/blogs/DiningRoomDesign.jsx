@@ -3,15 +3,59 @@ import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import diningRoom from '../../assets/blogs/Dining Room.jpg';
 
-const diningIdeas = [
-  { icon: '', title: 'Statement Chandelier', desc: 'A dramatic chandelier above the dining table creates an instant focal point and sets the mood for every meal.', image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?w=600&q=80' },
-  { icon: '', title: 'Mixed Seating', desc: 'Combine upholstered chairs with benches or stools for a relaxed, eclectic dining experience that seats more guests.', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80' },
-  { icon: '', title: 'Greenery & Centrepieces', desc: 'Fresh flowers, potted herbs, or sculptural plants as centrepieces bring life and freshness to the dining table.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
-  { icon: '', title: 'Natural Light', desc: 'Position the dining area near windows to maximize natural light - it makes food look better and meals feel more pleasant.', image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80' },
-  { icon: '', title: 'Accent Walls', desc: 'A bold wallpaper or textured accent wall behind the dining table adds drama and depth to the space.', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
-  { icon: '', title: 'Crockery Display', desc: 'Open shelving or glass-front cabinets to display curated crockery, glassware, and decorative pieces.', image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=600&q=80' },
-];
+import accentWalls from '../../assets/blogs/dining/6 semi image/Accent Walls.jpg';
 
+import crockeryDisplay from '../../assets/blogs/dining/6 semi image/Crockery Display.jpg';
+
+import greeneryCentrepieces from '../../assets/blogs/dining/6 semi image/Greenery & Centrepieces.jpg';
+
+import mixedSeating from '../../assets/blogs/dining/6 semi image/Mixed Seating.jpg';
+
+import naturalLight from '../../assets/blogs/dining/6 semi image/Natural Light.jpg';
+
+import statementChandelier from '../../assets/blogs/dining/6 semi image/Statement Chandelier.jpg';
+
+import dining1 from '../../assets/blogs/dining/dining1.jpg';
+import dining2 from '../../assets/blogs/dining/dining2.jpg';
+import dining3 from '../../assets/blogs/dining/dining3.jpg';
+const diningIdeas = [
+  {
+    icon: '',
+    title: 'Statement Chandelier',
+    desc: 'A dramatic chandelier above the dining table creates an instant focal point and sets the mood for every meal.',
+    image: statementChandelier
+  },
+  {
+    icon: '',
+    title: 'Mixed Seating',
+    desc: 'Combine upholstered chairs with benches or stools for a relaxed, eclectic dining experience that seats more guests.',
+    image: mixedSeating
+  },
+  {
+    icon: '',
+    title: 'Greenery & Centrepieces',
+    desc: 'Fresh flowers, potted herbs, or sculptural plants as centrepieces bring life and freshness to the dining table.',
+    image: greeneryCentrepieces
+  },
+  {
+    icon: '',
+    title: 'Natural Light',
+    desc: 'Position the dining area near windows to maximize natural light - it makes food look better and meals feel more pleasant.',
+    image: naturalLight
+  },
+  {
+    icon: '',
+    title: 'Accent Walls',
+    desc: 'A bold wallpaper or textured accent wall behind the dining table adds drama and depth to the space.',
+    image: accentWalls
+  },
+  {
+    icon: '',
+    title: 'Crockery Display',
+    desc: 'Open shelving or glass-front cabinets to display curated crockery, glassware, and decorative pieces.',
+    image: crockeryDisplay
+  }
+];
 const faqs = [
   { q: 'What is the ideal dining room size?', a: 'For comfortable dining, allow at least 36 inches of clearance around the table for chairs. A 10x12 ft room comfortably seats 6, while a 12x16 ft room can accommodate 8-10 guests.' },
   { q: 'What dining table shape is best for small spaces?', a: 'Round tables are ideal for small spaces as they allow more people to sit comfortably and improve traffic flow. Extendable tables are also great for flexibility.' },
@@ -98,7 +142,7 @@ const DiningRoomDesign = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&q=80" alt="Elegant Dining Room - Kryoss Interior" />
+          <img src={dining1} alt="Elegant Dining Room - Kryoss Interior" />
           <div className="blog-wide-image__caption">Elegant Dining Room Design â€¢ Kryoss Interior</div>
         </div>
 
@@ -139,7 +183,7 @@ const DiningRoomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?w=900&q=80" alt="Formal Dining Room" />
+              <img src={dining2} alt="Formal Dining Room" />
             </div>
           </div>
 
@@ -160,7 +204,7 @@ const DiningRoomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=900&q=80" alt="Open Plan Dining" />
+              <img src={dining3} alt="Open Plan Dining" />
             </div>
           </div>
         </section>

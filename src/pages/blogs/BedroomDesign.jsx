@@ -2,15 +2,22 @@
 import { Link } from 'react-router-dom';
 import './BlogArticle.css';
 import bedroom from '../../assets/blogs/Bedroom Design.jpg';
+import bedroom1 from '../../assets/blogs/bedroom/6 semi image/1.jpg';
+import bedroom2 from '../../assets/blogs/bedroom/6 semi image/2.jpg';
+import bedroom3 from '../../assets/blogs/bedroom/6 semi image/3.jpg';
+import bedroom4 from '../../assets/blogs/bedroom/6 semi image/4.jpg';
+import bedroom5 from '../../assets/blogs/bedroom/6 semi image/5.jpg';
+import bedroom6 from '../../assets/blogs/bedroom/6 semi image/6.jpg';
+import luxury from '../../assets/blogs/bedroom/luxury.jpg';
 
 
 const bedroomIdeas = [
-  { icon: '', title: 'Layered Lighting', desc: 'Warm bedside lamps combined with indirect ceiling lights create a relaxing, spa-like ambiance perfect for rest.', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { icon: '', title: 'Sliding Wardrobes', desc: 'Glossy or matte-finish wardrobes with sliding shutters save space while adding a sleek, modern aesthetic.', image: 'https://images.unsplash.com/photo-1616594039964-40891a90b3b5?w=600&q=80' },
-  { icon: '', title: 'Upholstered Headboards', desc: 'Textured or padded headboards bring luxury and comfort to contemporary bedrooms, creating a focal point.', image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80' },
-  { icon: '', title: 'Hidden Storage Beds', desc: 'Hydraulic storage beds are perfect for maximizing compact spaces without compromising on style.', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80' },
-  { icon: '', title: 'Accent Walls', desc: 'Bold wallpapers, textured panels, or a single painted accent wall adds depth and character to the bedroom.', image: 'https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=600&q=80' },
-  { icon: '', title: 'Biophilic Touches', desc: 'Indoor plants, natural wood textures, and organic materials bring calm and well-being to your sleep space.', image: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?w=600&q=80' },
+  { icon: '', title: 'Layered Lighting', desc: 'Warm bedside lamps combined with indirect ceiling lights create a relaxing, spa-like ambiance perfect for rest.', image: bedroom1 },
+  { icon: '', title: 'Sliding Wardrobes', desc: 'Glossy or matte-finish wardrobes with sliding shutters save space while adding a sleek, modern aesthetic.', image: bedroom2 },
+  { icon: '', title: 'Upholstered Headboards', desc: 'Textured or padded headboards bring luxury and comfort to contemporary bedrooms, creating a focal point.', image: bedroom3 },
+  { icon: '', title: 'Hidden Storage Beds', desc: 'Hydraulic storage beds are perfect for maximizing compact spaces without compromising on style.', image: bedroom4 },
+  { icon: '', title: 'Accent Walls', desc: 'Bold wallpapers, textured panels, or a single painted accent wall adds depth and character to the bedroom.', image: bedroom5 },
+  { icon: '', title: 'Biophilic Touches', desc: 'Indoor plants, natural wood textures, and organic materials bring calm and well-being to your sleep space.', image: bedroom6 },
 ];
 
 const faqs = [
@@ -99,7 +106,7 @@ const BedroomDesign = () => {
 
         {/* WIDE BANNER */}
         <div className="blog-wide-image" style={{ marginBottom: '5rem' }}>
-          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1600&q=80" alt="Master Bedroom - Kryoss Interior" />
+          <img src={luxury} alt="Master Bedroom - Kryoss Interior" />
           <div className="blog-wide-image__caption">Luxury Master Bedroom Design â€¢ Kryoss Interior</div>
         </div>
 
@@ -140,7 +147,7 @@ const BedroomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=900&q=80" alt="Master Bedroom" />
+              <img src={bedroom1} alt="Master Bedroom" />
             </div>
           </div>
 
@@ -161,7 +168,7 @@ const BedroomDesign = () => {
               </div>
             </div>
             <div className="blog-image-wrap" style={{ height: '480px' }}>
-              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" alt="Small Bedroom Design" />
+              <img src={bedroom2} alt="Small Bedroom Design" />
             </div>
           </div>
         </section>
