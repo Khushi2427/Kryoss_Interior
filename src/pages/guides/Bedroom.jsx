@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import bedroom from '../../assets/guides/Bedroom.jpg';
+import personalRetreat from '../../assets/guides/personal retreat.jpeg';
+import masterBedroom from '../../assets/guides/Master Bedroom.jpeg';
+import guestBedroom from '../../assets/guides/Guest Bedroom.png';
+import compactBedroom from '../../assets/guides/Compact Bedroom.jpeg';
+
 
 const Bedroom = () => {
   const [activeIdea, setActiveIdea] = useState(0);
@@ -18,19 +24,19 @@ const Bedroom = () => {
     {
       title: "Master Bedroom",
       icon: '',
-      img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=900&q=80",
+      img: masterBedroom,
       list: ["Spacious bed with statement headboard", "Ample wardrobe storage", "Seating area if space permits", "Soft, layered lighting"]
     },
     {
       title: "Guest Bedroom",
       icon: '',
-      img: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=900&q=80",
+      img: guestBedroom,
       list: ["Comfortable bed with quality linen", "Basic storage for guest belongings", "Clear surface for personal items", "Warm, welcoming ambiance"]
     },
     {
       title: "Compact Bedroom",
       icon: '',
-      img: "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=900&q=80",
+      img: compactBedroom,
       list: ["Space-saving furniture", "Multi-functional pieces", "Vertical storage solutions", "Light colours to open up space"]
     }
   ];
@@ -38,7 +44,7 @@ const Bedroom = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=1600&q=85" alt="Serene Bedroom" className="blog-hero__image" />
+        <img src={bedroom} alt="Serene Bedroom" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Bedroom<br /><em>Design Guide</em></h1>
@@ -52,7 +58,7 @@ const Bedroom = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=900&q=80" alt="Bedroom Layout" />
+              <img src={personalRetreat} alt="Bedroom Layout" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Personal Sanctuary</div>

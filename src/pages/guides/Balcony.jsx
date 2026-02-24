@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import bannerBalcony from '../../assets/guides/banner-Balcony.jpg';
+import extendSpace from '../../assets/guides/Extend-your-living-space.jpg';
+import floorOptions from '../../assets/guides/Balcony Flooring Options.jpg';
+import comfortableSeating from '../../assets/guides/Comfortable Seating.png';
+import greeneryPlanters from '../../assets/guides/Greenery & Planters.jpg';
+import ambientLighting from '../../assets/guides/Ambient Lighting.jpg';
+import privacySolutions from '../../assets/guides/Privacy Solutions.jpg';
 
 const Balcony = () => {
   const [activeElement, setActiveElement] = useState(0);
@@ -11,7 +18,7 @@ const Balcony = () => {
       title: "Flooring Options",
       icon: '',
       desc: "Weather-resistant flooring like WPC decking tiles, artificial grass, or outdoor-grade ceramic tiles set the foundation.",
-      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80",
+      img: floorOptions,
       tags: ["Decking", "Turf", "Tiles"]
     },
     {
@@ -19,7 +26,7 @@ const Balcony = () => {
       title: "Comfortable Seating",
       icon: '',
       desc: "Choose weather-proof furniture like rattan, metal, or treated wood. Foldable options work great for compact spaces.",
-      img: "https://images.unsplash.com/photo-1595514020173-66b6e3a6a95e?w=900&q=80", // Needs balcony seating generic
+      img: comfortableSeating,
       tags: ["Rattan", "Foldable", "Weatherproof"]
     },
     {
@@ -27,7 +34,7 @@ const Balcony = () => {
       title: "Greenery & Planters",
       icon: '',
       desc: "Vertical gardens, railing planters, and potted plants bring life. Choose plants suited for your sunlight conditions.",
-      img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=80", // Placeholder
+      img: greeneryPlanters,
       tags: ["Vertical Garden", "Pots", "Low Maintenance"]
     },
     {
@@ -35,7 +42,7 @@ const Balcony = () => {
       title: "Ambient Lighting",
       icon: '',
       desc: "Fairy lights, solar lanterns, or wall sconces create a magical evening atmosphere without needing complex wiring.",
-      img: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=900&q=80",
+      img: ambientLighting,
       tags: ["Fairy Lights", "Solar", "Warm White"]
     },
     {
@@ -43,7 +50,7 @@ const Balcony = () => {
       title: "Privacy Solutions",
       icon: '',
       desc: "Bamboo screens, tall plants, or outdoor blinds can provide privacy from neighbors while maintaining airflow.",
-      img: "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=900&q=80",
+      img: privacySolutions,
       tags: ["Screens", "Blinds", "Plants"]
     }
   ];
@@ -58,7 +65,7 @@ const Balcony = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=85" alt="Cozy Balcony" className="blog-hero__image" />
+        <img src={bannerBalcony} className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Balcony<br /><em>Design Guide</em></h1>
@@ -72,7 +79,7 @@ const Balcony = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=80" alt="Balcony Setup" />
+              <img src={extendSpace} alt="Balcony Setup" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Outdoor Living</div>

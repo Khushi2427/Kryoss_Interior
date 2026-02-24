@@ -1,16 +1,24 @@
 import React, { useState } from 'react';
 import '../blogs/BlogArticle.css';
+import banner from '../../assets/guides/Living-Room-banner.jpg';
+import comfSeating from '../../assets/guides/Comfortable Seating.jpeg';
+import realLifeHapns from '../../assets/guides/real-life-happens.jpg';
+import storageTV from '../../assets/guides/Storage & TV.jpg';
+import textBalancing from '../../assets/guides/Texture Balance.jpg';
+import lightStrat from '../../assets/guides/Lighting Strategy.jpg';
+import laminates from '../../assets/guides/Laminates.png';
+
 
 const LivingRoom = () => {
   const [activeElement, setActiveElement] = useState(0);
   const [activeFaq, setActiveFaq] = useState(null);
 
   const elements = [
-    { title: "Smart Layout", icon: '', desc: "Arrange seating to encourage conversation. Maintain clear pathways (min 30 inches) and avoid blocking natural light.", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=80" },
-    { title: "Comfortable Seating", icon: '', desc: "Prioritize comfort. Mix sofa sizes with accent chairs for flexibility. Ensure fabrics are durable.", img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?w=900&q=80" },
-    { title: "Lighting Strategy", icon: '', desc: "Layer your lighting: Overhead for general use, floor lamps for reading, and accent lights for art or texture.", img: "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=900&q=80" },
-    { title: "Storage & TV", icon: '', desc: "TV units with closed storage hide clutter. Floating units save floor space and look modern.", img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" },
-    { title: "Texture Balance", icon: '', desc: "Mix materials like wood, metal, glass, and fabric to add depth. Use rugs to define zones.", img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=900&q=80" }
+    { title: "Smart Layout", icon: '', desc: "Arrange seating to encourage conversation. Maintain clear pathways (min 30 inches) and avoid blocking natural light.", img: laminates },
+    { title: "Comfortable Seating", icon: '', desc: "Prioritize comfort. Mix sofa sizes with accent chairs for flexibility. Ensure fabrics are durable.", img: comfSeating },
+    { title: "Lighting Strategy", icon: '', desc: "Layer your lighting: Overhead for general use, floor lamps for reading, and accent lights for art or texture.", img: lightStrat },
+    { title: "Storage & TV", icon: '', desc: "TV units with closed storage hide clutter. Floating units save floor space and look modern.", img: storageTV },
+    { title: "Texture Balance", icon: '', desc: "Mix materials like wood, metal, glass, and fabric to add depth. Use rugs to define zones.", img: textBalancing }
   ];
 
   const mistakes = [
@@ -23,7 +31,7 @@ const LivingRoom = () => {
   return (
     <div className="blog-page">
       <div className="blog-hero">
-        <img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?w=1800&q=85" alt="Modern Living Room" className="blog-hero__image" />
+        <img src={banner} alt="Modern Living Room" className="blog-hero__image" />
         <div className="blog-hero__overlay">
           <div className="blog-hero__content">
             <h1 className="blog-hero__title">Living Room<br /><em>Design Guide</em></h1>
@@ -37,7 +45,7 @@ const LivingRoom = () => {
         <section style={{ marginBottom: '6rem' }}>
           <div className="blog-split">
             <div className="blog-image-wrap">
-              <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=900&q=80" alt="Living Room Seat" />
+              <img src={realLifeHapns} alt="Living Room Seat" />
             </div>
             <div style={{ padding: '2rem 0' }}>
               <div className="section-label"><span style={{ background: 'var(--kr-red)', display: 'block', width: '20px', height: '1.5px' }}></span>Social Hub</div>
